@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title> Menginstall Arch Linux </title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="author" content="Nestero" />
+<meta content="GNU/Linux, Open Source" name="keywords">
+<meta content="Arch Linux ? Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux." name="description">
+
+<link href="https://nesstero.github.io/img/favicon.png" rel="icon">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<link href="https://nesstero.github.io/css/style.css" rel="stylesheet">
+
+
+
+
+
+
+</head>
+<body><div class="wrapper">
+<div class="sidebar">
+  <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+    <img class="mx-auto d-block w-70 bg-primary img-fluid rounded-circle mb-4 p-2" src="https://nesstero.github.io/img/favicon.png" alt="Nestero">
+    <h1 class="font-weight-bold">
+    Nestero
+    </h1>
+    <p class="mb-4">
+    Selamat Datang di Blog Sederhana ini 🥳🥳🥳
+    </p>
+    <div class="d-flex justify-content-center mb-5">
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-telegram"></i></a>
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+
+<div class="container p-0">
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav m-auto">
+          <a href="https://nesstero.github.io/" class="nav-item nav-link active">Home</a>
+          <a href="https://nesstero.github.io/catatan" class="nav-item nav-link">Catatan</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Install</a>
+            <div class="dropdown-menu">
+              <a href="https://nesstero.github.io/catatan/install-arch-linux/" class="dropdown-item">Arch Linux</a>
+              <a href="https://nesstero.github.io/catatan/install-artix-linux/" class="dropdown-item">Artix Linux</a>
+            </div>
+        </div>
+        <a href="https://nesstero.github.io//pencarian" class="nav-item nav-link">Pencarian</a>
+        </div>
+      </div>
+  </nav>
+</div>
+
+
+
+
+
+<div class="container py-5 px-2 bg-white">
+  <div class="row px-4">
+    <div class="col-12">
+      <h1 class="mb-3 font-weight-bold">Menginstall Arch Linux</h1>
+    <div class="d-flex">
+    
+    
+    <p class="mr-3 text-muted"><i class="fa fa-edit"></i> 
+    Update 22 October 2020
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/arch-linux" class="text-primary">Arch linux</a>
+    </p>
+    
+    </div>
+    <p><h3 id="arch-linux-"><strong>Arch Linux ?</strong></h3>
+<p>Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux.  <a href="https://archlinux.org/" title="website resmi arch linux" rel="noopener noreferrer" target="_blank">Arch linux</a>
+ adalah salah satu dari sekian banyak distribusi gnu/linux yang menganut prinsip <em>KISS</em> katanya 😂. Arch linux menggunakan package manager yang di sebut <strong>pacman</strong>. Arch linux juga memiliki wiki/dokumentasi yang lumayan lengkap jika di bandingkan dengan distribusi yang lainnya sampai - sampai memiliki jargon <em><strong>RTFM</strong></em>. Untuk lebih jelasnya mengenai arch linux silahkan kunjungi website resminya  <a href="https://wiki.archlinux.org/title/Arch_Linux" title="tentang arch linux" rel="noopener noreferrer" target="_blank">disini</a>
+.</p>
+<h3 id="persiapan"><strong>Persiapan</strong></h3>
+<p>Langsung saja ke topik utama kita <strong>Bagaimana Cara Menginstall Arch Linux ?</strong>.
+Pertama pastikan sudah memiliki bootable usb arch linux, untuk file isonya bisa di unduh langsung pada website resmi arch linux  <a href="https://archlinux.org/download/" title="unduh file iso arch linux" rel="noopener noreferrer" target="_blank">disini</a>
+.
+Dalam pembahasan ini kita tidak akan membahas bagaimana caranya mempartisi HDD/SSD, disini kita memiliki 3 partisi, partisi swap, root, dan partisi home kurang lebih seperti ini :</p>
+<ul>
+<li><strong>/dev/sda1</strong> untuk partisi swap ukurannya bisa disesuaikan dengan kapasitas RAM.</li>
+<li><strong>/dev/sda2</strong> untuk partisi root rekomendasi kasih partisi root minimal 50 GB.</li>
+<li><strong>/dev/sda3</strong> untuk partisi home bebas.</li>
+</ul>
+<h4 id="memformat-dan-mengaitkan-partisi"><strong>Memformat dan mengaitkan partisi</strong></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  mkswap /dev/sda1
+  mkfs.ext4 /dev/sda2
+  swapon /dev/sda1
+  mkdir -p /mnt/home
+  mount /dev/sda2 /mnt
+  mount /dev/sda3 /mnt/home
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>mkswap digunakan untuk memformat partisi swap</li>
+<li>mkfs.ext4 digunakan untuk memformat partisi dengan format Ext4</li>
+<li>swapon digunakan untuk mengaktifkan swap</li>
+<li>mkdir -p /mnt/home untuk membuat parent home direktori</li>
+<li>mount digunakan untuk mengaitkan partisi</li>
+</ul>
+<p>tambahan bagi pengguna uefi :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  mkfs.fat -F <span style="color:#bd93f9">32</span> &lt;partisi-efi&gt;
+  mkdir -p /mnt/<span style="color:#ff79c6">{</span>boot/efi,home<span style="color:#ff79c6">}</span>
+  mount &lt;partisi-efi&gt; /mnt/boot/efi
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>mkfs.fat -F 32 untuk memformat partisi efi</li>
+</ul>
+<h3 id="proses-instalasi"><strong>Proses Instalasi</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  iwctl
+    iwd# device list
+    iwd# station wlan0 scan
+    iwd# station wlan0 get-networks
+    iwd# station wlan0 connect <span style="color:#f1fa8c">`</span>&lt;nama-SSID&gt;<span style="color:#f1fa8c">`</span>
+    iwd# <span style="color:#8be9fd;font-style:italic">exit</span>
+  pacstrap /mnt base base-devel linux linux-firmware nano
+  genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li> <a href="https://wiki.archlinux.org/title/Iwd#Usage" title="penggunaan iwd" rel="noopener noreferrer" target="_blank">iwctl/iwd</a>
+ adalah wireless daemon</li>
+<li>pacstrap /mnt &hellip;&hellip; digunakan untuk menginstall base paket ke direktori /mnt</li>
+<li>genfstab digunakan untuk mengenerate file  <a href="https://wiki.archlinux.org/title/Fstab" title="apa itu fstab ?" rel="noopener noreferrer" target="_blank">fstab</a>
+</li>
+</ul>
+<h3 id="konfigurasi"><strong>Konfigurasi</strong></h3>
+<p>Hal - hal yang perlu di konfigurasi setelah menginstall arch linux :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  arch-chroot /mnt
+  timedatectl set-timezone Asia/Jakarta
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>arch-chroot di gunakan untuk mengubah direktori root</li>
+<li>timezone (WIB)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  nano /etc/locale.gen
+  locale-gen
+  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">LANG</span><span style="color:#ff79c6">=</span>en_US.UTF-8 &gt; /etc/locale.conf
+  <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">LANG</span><span style="color:#ff79c6">=</span>en_US.UTF-8
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li> <a href="https://wiki.archlinux.org/title/Locale" title="apa itu locale ?" rel="noopener noreferrer" target="_blank">locale</a>
+</li>
+<li>uncomment <strong>en_US.UTF-8</strong> dan <strong>id_ID.UTF-8</strong> pada file <strong>locale.gen</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  <span style="color:#8be9fd;font-style:italic">echo</span> myarch &gt; /etc/hostname
+  touch /etc/hosts
+  nano /etc/hosts
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>touch digunakan untuk membuat sebuah file</li>
+<li>isi dari file <strong>host</strong> :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  <span style="color:#50fa7b">127.0.0.1	localhost</span>
+  <span style="color:#50fa7b">::1 localhost</span>
+  <span style="color:#50fa7b">127.0.1.1	myarch</span>
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>myarch bisa dirubah dengan nama host lainnya</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  passwd
+  pacman -S grub
+  grub-install /dev/sda
+  grub-mkconfig -o /boot/grub/grub.cfg
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>passwd digunakan untuk mengatur password <strong>root</strong></li>
+<li>pacman -S digunakan untuk menginstall paket</li>
+<li>grub adalah boot loader</li>
+<li>tambahan bagi pengguna uefi:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  pacman -S grub efibootmgr
+  grub-install --target<span style="color:#ff79c6">=</span>x86_64-efi --bootloader-id<span style="color:#ff79c6">=</span>GRUB --efi-directory<span style="color:#ff79c6">=</span>/boot/efi
+  grub-mkconfig -o /boot/grub/grub.cfg
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><h3 id="menambahkan-username"><strong>Menambahkan Username</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  useradd -m -g users -G wheel -c <span style="color:#f1fa8c">&#34;Ara&#34;</span> ara
+  passwd ara <span style="color:#ff79c6">(</span>membuat password untuk user ara<span style="color:#ff79c6">)</span>
+  pacman -S sudo
+  nano /etc/sudoers
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>useradd digunakan untuk menambahkan user baru</li>
+<li>sudo adalah alternatif dari  <a href="https://wiki.archlinux.org/title/Su" title="apa itu su ?" rel="noopener noreferrer" target="_blank">su</a>
+ untuk menjalankan perintah sebagai root</li>
+<li>masukan user baru ke dalam file <strong>sudoers</strong> :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  <span style="color:#50fa7b">root ALL</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">(ALL) ALL
+</span><span style="color:#f1fa8c">  ara All=(ALL) ALL</span>
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><h3 id="menginstal-desktop-environment"><strong>Menginstal Desktop Environment</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span> pacman -S xorg plasma
+ systemctl <span style="color:#8be9fd;font-style:italic">enable</span> sddm.service
+ systemctl <span style="color:#8be9fd;font-style:italic">enable</span> NetworkManager.service
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><ul>
+<li>plasma merupakan Desktop Environment buatan KDE</li>
+</ul>
+<h3 id="reboot"><strong>Reboot</strong></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+</span>  <span style="color:#8be9fd;font-style:italic">exit</span>
+  reboot
+<span style="display:block;width:100%;background-color:#3d3f4a">
+</span></code></pre></div><h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
+<p>Menginstall arch linux dengan berbasis text tidaklah sesulit yang dibayangkan oleh kebanyakan orang diluar sana 🥳</p>
+</p>
+    <hr>
+    
+    
+    <hr>
+    </div>
+    <div class="col-12 py-4">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nesstero-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+</div>
+
+  <div class="container py-4 bg-secondary text-center">
+    <p class="m-0 text-white">
+    &copy; <a class="text-white font-weight-bold" href="https://nesstero.github.io/">Nestero</a>. All Rights Reserved.</a>
+    </p>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://nesstero.github.io/js/main.js"></script>
+
+<script src="https://nesstero.github.io/js/cari.js"></script>
+</div>
+</body>
+</html>

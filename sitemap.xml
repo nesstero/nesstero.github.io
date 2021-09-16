@@ -3,62 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
    
   <url>
-    <loc>https://nesstero.github.io/tags/artix/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/categories/artix-linux/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/catatan/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/categories/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/catatan/install-artix-linux/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/tags/runit/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/tags/</loc>
-    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
-  </url>
-    
-  <url>
-    <loc>https://nesstero.github.io/categories/arch-linux/</loc>
-    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
-  </url>
-    
-  <url>
     <loc>https://nesstero.github.io/tags/arch-linux/</loc>
     <lastmod>2020-10-22T19:47:45+07:00</lastmod>
   </url>
     
   <url>
-    <loc>https://nesstero.github.io/catatan/install-arch-linux/</loc>
+    <loc>https://nesstero.github.io/catatan/</loc>
+    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/categories/</loc>
+    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/catatan/menginstall-arch-linux/</loc>
+    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/categories/menginstall-install-sistem-operasi-gnu-linux/</loc>
+    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/</loc>
+    <lastmod>2021-09-15T22:59:44+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/tags/</loc>
     <lastmod>2020-10-22T19:47:45+07:00</lastmod>
   </url>
     
   <url>
     <loc>https://nesstero.github.io/pencarian/</loc>
+    <lastmod>2021-09-15T22:59:44+07:00</lastmod>
   </url>
    
 </urlset>
