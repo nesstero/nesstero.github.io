@@ -101,14 +101,14 @@ Dalam pembahasan ini kita tidak akan membahas bagaimana caranya mempartisi HDD/S
 <li><strong>/dev/sda3</strong> untuk partisi home bebas.</li>
 </ul>
 <h4 id="memformat-dan-mengaitkan-partisi"><strong>Memformat dan mengaitkan partisi</strong></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span>  mkswap /dev/sda1
   mkfs.ext4 /dev/sda2
   swapon /dev/sda1
   mkdir -p /mnt/home
   mount /dev/sda2 /mnt
   mount /dev/sda3 /mnt/home
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>mkswap digunakan untuk memformat partisi swap</li>
 <li>mkfs.ext4 digunakan untuk memformat partisi dengan format Ext4</li>
@@ -117,25 +117,25 @@ Dalam pembahasan ini kita tidak akan membahas bagaimana caranya mempartisi HDD/S
 <li>mount digunakan untuk mengaitkan partisi</li>
 </ul>
 <p>tambahan bagi pengguna uefi :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
-</span>  mkfs.fat -F <span style="color:#bd93f9">32</span> &lt;partisi-efi&gt;
-  mkdir -p /mnt/<span style="color:#ff79c6">{</span>boot/efi,home<span style="color:#ff79c6">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
+</span>  mkfs.fat -F <span style="color:#ae81ff">32</span> &lt;partisi-efi&gt;
+  mkdir -p /mnt/<span style="color:#f92672">{</span>boot/efi,home<span style="color:#f92672">}</span>
   mount &lt;partisi-efi&gt; /mnt/boot/efi
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>mkfs.fat -F 32 untuk memformat partisi efi</li>
 </ul>
 <h3 id="proses-instalasi"><strong>Proses Instalasi</strong></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span>  iwctl
     iwd# device list
     iwd# station wlan0 scan
     iwd# station wlan0 get-networks
-    iwd# station wlan0 connect <span style="color:#f1fa8c">`</span>&lt;nama-SSID&gt;<span style="color:#f1fa8c">`</span>
-    iwd# <span style="color:#8be9fd;font-style:italic">exit</span>
+    iwd# station wlan0 connect <span style="color:#e6db74">`</span>&lt;nama-SSID&gt;<span style="color:#e6db74">`</span>
+    iwd# exit
   pacstrap /mnt base base-devel linux linux-firmware nano
   genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li> <a href="https://wiki.archlinux.org/title/Iwd#Usage" title="penggunaan iwd" rel="noopener noreferrer" target="_blank">iwctl/iwd</a>
  adalah wireless daemon</li>
@@ -145,90 +145,90 @@ Dalam pembahasan ini kita tidak akan membahas bagaimana caranya mempartisi HDD/S
 </ul>
 <h3 id="konfigurasi"><strong>Konfigurasi</strong></h3>
 <p>Hal - hal yang perlu di konfigurasi setelah menginstall arch linux :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span>  arch-chroot /mnt
   timedatectl set-timezone Asia/Jakarta
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>arch-chroot di gunakan untuk mengubah direktori root</li>
 <li>timezone (WIB)</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span>  nano /etc/locale.gen
   locale-gen
-  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">LANG</span><span style="color:#ff79c6">=</span>en_US.UTF-8 &gt; /etc/locale.conf
-  <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">LANG</span><span style="color:#ff79c6">=</span>en_US.UTF-8
-<span style="display:block;width:100%;background-color:#3d3f4a">
+  echo LANG<span style="color:#f92672">=</span>en_US.UTF-8 &gt; /etc/locale.conf
+  export LANG<span style="color:#f92672">=</span>en_US.UTF-8
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li> <a href="https://wiki.archlinux.org/title/Locale" title="apa itu locale ?" rel="noopener noreferrer" target="_blank">locale</a>
 </li>
 <li>uncomment <strong>en_US.UTF-8</strong> dan <strong>id_ID.UTF-8</strong> pada file <strong>locale.gen</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
-</span>  <span style="color:#8be9fd;font-style:italic">echo</span> myarch &gt; /etc/hostname
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
+</span>  echo myarch &gt; /etc/hostname
   touch /etc/hosts
   nano /etc/hosts
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>touch digunakan untuk membuat sebuah file</li>
 <li>isi dari file <strong>host</strong> :</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="display:block;width:100%;background-color:#3d3f4a">
-</span>  <span style="color:#50fa7b">127.0.0.1	localhost</span>
-  <span style="color:#50fa7b">::1 localhost</span>
-  <span style="color:#50fa7b">127.0.1.1	myarch</span>
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="display:block;width:100%;background-color:#3c3d38">
+</span>  <span style="color:#a6e22e">127.0.0.1	localhost</span>
+  <span style="color:#a6e22e">::1 localhost</span>
+  <span style="color:#a6e22e">127.0.1.1	myarch</span>
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>myarch bisa dirubah dengan nama host lainnya</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span>  passwd
   pacman -S grub
   grub-install /dev/sda
   grub-mkconfig -o /boot/grub/grub.cfg
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>passwd digunakan untuk mengatur password <strong>root</strong></li>
 <li>pacman -S digunakan untuk menginstall paket</li>
 <li>grub adalah boot loader</li>
 <li>tambahan bagi pengguna uefi:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span>  pacman -S grub efibootmgr
-  grub-install --target<span style="color:#ff79c6">=</span>x86_64-efi --bootloader-id<span style="color:#ff79c6">=</span>GRUB --efi-directory<span style="color:#ff79c6">=</span>/boot/efi
+  grub-install --target<span style="color:#f92672">=</span>x86_64-efi --bootloader-id<span style="color:#f92672">=</span>GRUB --efi-directory<span style="color:#f92672">=</span>/boot/efi
   grub-mkconfig -o /boot/grub/grub.cfg
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><h3 id="menambahkan-username"><strong>Menambahkan Username</strong></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
-</span>  useradd -m -g users -G wheel -c <span style="color:#f1fa8c">&#34;Ara&#34;</span> ara
-  passwd ara <span style="color:#ff79c6">(</span>membuat password untuk user ara<span style="color:#ff79c6">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
+</span>  useradd -m -g users -G wheel -c <span style="color:#e6db74">&#34;Ara&#34;</span> ara
+  passwd ara <span style="color:#f92672">(</span>membuat password untuk user ara<span style="color:#f92672">)</span>
   pacman -S sudo
   nano /etc/sudoers
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>useradd digunakan untuk menambahkan user baru</li>
 <li>sudo adalah alternatif dari  <a href="https://wiki.archlinux.org/title/Su" title="apa itu su ?" rel="noopener noreferrer" target="_blank">su</a>
  untuk menjalankan perintah sebagai root</li>
 <li>masukan user baru ke dalam file <strong>sudoers</strong> :</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="display:block;width:100%;background-color:#3d3f4a">
-</span>  <span style="color:#50fa7b">root ALL</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">(ALL) ALL
-</span><span style="color:#f1fa8c">  ara All=(ALL) ALL</span>
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="display:block;width:100%;background-color:#3c3d38">
+</span>  <span style="color:#a6e22e">root ALL</span><span style="color:#f92672">=</span><span style="color:#e6db74">(ALL) ALL
+</span><span style="color:#e6db74">  ara All=(ALL) ALL</span>
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><h3 id="menginstal-desktop-environment"><strong>Menginstal Desktop Environment</strong></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
 </span> pacman -S xorg plasma
- systemctl <span style="color:#8be9fd;font-style:italic">enable</span> sddm.service
- systemctl <span style="color:#8be9fd;font-style:italic">enable</span> NetworkManager.service
-<span style="display:block;width:100%;background-color:#3d3f4a">
+ systemctl enable sddm.service
+ systemctl enable NetworkManager.service
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><ul>
 <li>plasma merupakan Desktop Environment buatan KDE</li>
 </ul>
 <h3 id="reboot"><strong>Reboot</strong></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3d3f4a">
-</span>  <span style="color:#8be9fd;font-style:italic">exit</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="display:block;width:100%;background-color:#3c3d38">
+</span>  exit
   reboot
-<span style="display:block;width:100%;background-color:#3d3f4a">
+<span style="display:block;width:100%;background-color:#3c3d38">
 </span></code></pre></div><h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
 <p>Menginstall arch linux dengan berbasis text tidaklah sesulit yang dibayangkan oleh kebanyakan orang diluar sana 🥳</p>
 </p>
