@@ -9887,8 +9887,6 @@ h3 {
 }
 
 .highlight > .chroma {
-  color: #d0d0d0;
-  background-color: #212121;
   position: static;
   z-index: 1;
   border-radius: 4px;
@@ -9906,10 +9904,11 @@ h3 {
 }
 
 .chroma [data-lang]:before {
+    background-color: #282A36;
     position: absolute;
     z-index: 0;
-    top: -22px;
-    left: 0px;
+    top: -10px;
+    right: 0px;
     content: attr(data-lang);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
