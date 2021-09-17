@@ -123,10 +123,6 @@ dd {
   margin-left: 0;
 }
 
-blockquote {
-  margin: 0 0 1rem;
-}
-
 b,
 strong {
   font-weight: bolder;
@@ -452,20 +448,6 @@ mark,
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
-}
-
-.blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-.blockquote-footer {
-  display: block;
-  font-size: 80%;
-  color: #6c757d;
-}
-.blockquote-footer::before {
-  content: "— ";
 }
 
 .img-fluid {
@@ -9582,10 +9564,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   pre,
-blockquote {
-    border: 1px solid #adb5bd;
-    page-break-inside: avoid;
-  }
 
   thead {
     display: table-header-group;
@@ -9901,4 +9879,13 @@ h3 {
 .chroma .lntd:last-child {
   padding: 7px 10px 7px 7px;
   margin: 0;
+}
+
+blockquote {
+  color:#202C45;
+  background: #f9f9f9;
+  border-left: 10px solid #202C45;
+  border-radius: 4px;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 }
