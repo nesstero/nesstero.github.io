@@ -1,5 +1,9 @@
 [
     {
+      "title": "Menginstall Artix Linux dengan Init Runit",
+      "url": "/catatan/menginstall-artix-linux/"
+    },
+    {
       "title": "Menginstall Arch Linux",
       "url": "/catatan/menginstall-arch-linux/"
     }

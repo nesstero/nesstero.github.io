@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="utf-8">
-<title> Menginstall Arch Linux </title>
+<title> Menginstall Artix Linux dengan Init Runit </title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta name="author" content="Nestero" />
 <meta content="GNU/Linux, Open Source" name="keywords">
-<meta content="Arch Linux ?  Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux." name="description">
+<meta content="Artix Linux ?  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom." name="description">
 <meta content="https://nesstero.github.io/img/og.svg" name="image">
 
 <link href="https://nesstero.github.io/img/icon.svg" rel="icon">
@@ -75,30 +75,41 @@
 <div class="container py-5 px-2 bg-white">
   <div class="row px-4">
     <div class="col-12">
-      <h1 class="mb-3 font-weight-bold">Menginstall Arch Linux</h1>
+      <h1 class="mb-3 font-weight-bold">Menginstall Artix Linux dengan Init Runit</h1>
     <div class="d-flex">
     
     
     <p class="mr-3 text-muted"><i class="fa fa-edit"></i> 
-    22 October 2020
+    25 May 2021
     </p>
     
     <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
-    <a href="/tags/arch-linux" class="text-primary">Arch linux</a>
+    <a href="/tags/artix-linux" class="text-primary">Artix linux</a>
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/runit" class="text-primary">Runit</a>
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/init" class="text-primary">Init</a>
     </p>
     
     </div>
-    <p><h3 id="arch-linux-"><strong>Arch Linux ?</strong></h3>
+    <p><h3 id="artix-linux-"><strong>Artix Linux ?</strong></h3>
 <blockquote>
-<p>Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux.  <a href="https://archlinux.org/" title="website resmi arch linux" rel="noopener noreferrer" target="_blank">Arch linux</a>
- adalah salah satu dari sekian banyak distribusi gnu/linux yang menganut prinsip <em>KISS</em> katanya 😂. Arch linux menggunakan package manager yang di sebut <strong>pacman</strong>. Arch linux juga memiliki wiki/dokumentasi yang lumayan lengkap jika di bandingkan dengan distribusi yang lainnya sampai - sampai memiliki jargon <em><strong>RTFM</strong></em>. Untuk lebih jelasnya mengenai arch linux silahkan kunjungi website resminya  <a href="https://wiki.archlinux.org/title/Arch_Linux" title="tentang arch linux" rel="noopener noreferrer" target="_blank">disini</a>
+<p>Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom. File iso artix linux bisa di dapatkan pada website resminya  <a href="https://artixlinux.org/download.php" title="unduh iso artix linux" rel="noopener noreferrer" target="_blank">disini</a>
 .</p>
 </blockquote>
+<h3 id="runit-"><strong>Runit ?</strong></h3>
+<blockquote>
+<p>Runit adalah salah satu dari init freedom yang menggantikan sysvinit, lebih jelasnya silahkan langsung ke website resminya  <a href="http://smarden.org/runit/" title="apa itu runit ?" rel="noopener noreferrer" target="_blank">disini</a>
+</p>
+</blockquote>
 <h3 id="persiapan"><strong>Persiapan</strong></h3>
-<p>Langsung saja ke topik utama kita <strong>Bagaimana Cara Menginstall Arch Linux ?</strong>.
-Pertama pastikan sudah memiliki bootable usb arch linux, untuk file isonya bisa di unduh langsung pada website resmi arch linux  <a href="https://archlinux.org/download/" title="unduh file iso arch linux" rel="noopener noreferrer" target="_blank">disini</a>
-.
-Dalam pembahasan ini kita tidak akan membahas bagaimana caranya mempartisi HDD/SSD, disini kita memiliki 3 partisi, partisi swap, root, dan partisi home kurang lebih seperti ini :</p>
+<p>Bagi yang sudah pernah menginstall arch linux pembahasan ini sangatlah mudah 😃, karena proses installnya kurang lebih sama hanya berbeda pada saat menginstall package yang berkaitan dengan init system. Pada pembahasan ini juga tidak akan membahas bagaimana cara mempartisi HDD/SDD seperti pada pembahasan <strong> <a href="/catatan/menginstall-arch-linux" title="install arch linux">menginstall arch linux</a>
+</strong> sebelumnya.
+Disini kita memiliki 3 partisi, partisi swap, root, dan partisi home kurang lebih seperti ini :</p>
 <ul>
 <li><strong>/dev/sda1</strong> untuk partisi swap ukurannya bisa disesuaikan dengan kapasitas RAM.</li>
 <li><strong>/dev/sda2</strong> untuk partisi root rekomendasi kasih partisi root minimal 50 GB.</li>
@@ -126,27 +137,29 @@ mount &lt;partisi-efi&gt; /mnt/boot/efi
 <li>mkfs.fat -F 32 untuk memformat partisi efi</li>
 </ul>
 <h3 id="proses-instalasi"><strong>Proses Instalasi</strong></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">iwctl
-  iwd# device list
-  iwd# station wlan0 scan
-  iwd# station wlan0 get-networks
-  iwd# station wlan0 connect <span class="sb">`</span>&lt;nama-SSID&gt;<span class="sb">`</span>
-  iwd# <span class="nb">exit</span>
-pacstrap /mnt base base-devel linux linux-firmware nano
-genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">connmanctl
+  connmanctl&gt;scan wifi
+  connmanctl&gt;services
+  connmanctl&gt;agent on
+  connmanctl&gt;connect &lt;services&gt;
+  connmanctl&gt;exit
+basestrap /mnt base base-devel runit elogind-runit nano
+basestrap /mnt linux linux-firmware
+fstabgen -U /mnt &gt;&gt; /mnt/etc/fstab
 </code></pre></div><ul>
-<li> <a href="https://wiki.archlinux.org/title/Iwd#Usage" title="penggunaan iwd" rel="noopener noreferrer" target="_blank">iwctl/iwd</a>
- adalah wireless daemon</li>
-<li>pacstrap /mnt &hellip;&hellip; digunakan untuk menginstall base paket ke direktori /mnt</li>
-<li>genfstab digunakan untuk mengenerate file  <a href="https://wiki.archlinux.org/title/Fstab" title="apa itu fstab ?" rel="noopener noreferrer" target="_blank">fstab</a>
+<li> <a href="https://wiki.archlinux.org/title/ConnMan#Usage" title="penggunaan connman" rel="noopener noreferrer" target="_blank">connmanctl/connman</a>
+ adalah network manager</li>
+<li>basestrap /mnt &hellip;&hellip; digunakan untuk menginstall base paket ke direktori /mnt</li>
+<li>fstabgen digunakan untuk mengenerate file  <a href="https://wiki.archlinux.org/title/Fstab" title="apa itu fstab ?" rel="noopener noreferrer" target="_blank">fstab</a>
 </li>
 </ul>
 <h3 id="konfigurasi"><strong>Konfigurasi</strong></h3>
-<p>Hal - hal yang perlu di konfigurasi setelah menginstall arch linux :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">arch-chroot /mnt
-timedatectl set-timezone Asia/Jakarta
+<p>Hal - hal yang perlu di konfigurasi setelah menginstall artix linux :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">artix-chroot /mnt
+ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+hwclock --systohc
 </code></pre></div><ul>
-<li>arch-chroot di gunakan untuk mengubah direktori root</li>
+<li>artix-chroot di gunakan untuk mengubah direktori root</li>
 <li>timezone (WIB)</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">nano /etc/locale.gen
@@ -158,7 +171,7 @@ locale-gen
 </li>
 <li>uncomment <strong>en_US.UTF-8</strong> dan <strong>id_ID.UTF-8</strong> pada file <strong>locale.gen</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> myarch &gt; /etc/hostname
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> myartix &gt; /etc/hostname
 touch /etc/hosts
 nano /etc/hosts
 </code></pre></div><ul>
@@ -167,9 +180,9 @@ nano /etc/hosts
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">127.0.0.1	localhost</span>
 <span class="na">::1 localhost</span>
-<span class="na">127.0.1.1	myarch</span>
+<span class="na">127.0.1.1	myartix</span>
 </code></pre></div><ul>
-<li>myarch bisa dirubah dengan nama host lainnya</li>
+<li>myartix bisa dirubah dengan nama host lainnya</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">passwd
 pacman -S grub
@@ -197,21 +210,30 @@ nano /etc/sudoers
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">root ALL</span><span class="o">=</span><span class="s">(ALL) ALL</span>
 <span class="na">ara All</span><span class="o">=</span><span class="s">(ALL) ALL</span>
-</code></pre></div><h3 id="menginstal-desktop-environment"><strong>Menginstal Desktop Environment</strong></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">pacman -S xorg plasma
-systemctl <span class="nb">enable</span> sddm.service
-systemctl <span class="nb">enable</span> NetworkManager.service
+</code></pre></div><h3 id="menginstall-network-manager"><strong>Menginstall Network Manager</strong></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">pacman -S dhcpcd connman-runit connman-gtk wpa_supplicant
+ln -s /etc/runit/sv/connmand /etc/runit/runsvdir/default
 </code></pre></div><ul>
-<li>plasma merupakan Desktop Environment buatan KDE</li>
+<li><strong>ln -s /etc/runit/sv/ &hellip;</strong> digunakan untuk menghidupkan service pada runit system</li>
 </ul>
 <h3 id="reboot"><strong>Reboot</strong></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">exit</span>
+umount -R /mnt
 reboot
+</code></pre></div><h3 id="menginstall-xorg"><strong>Menginstall Xorg</strong></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">pacman -S xorg xorg-xinit
 </code></pre></div><h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
-<p>Menginstall arch linux dengan berbasis text tidaklah sesulit yang dibayangkan oleh kebanyakan orang diluar sana 🥳</p>
+<p>Sama seperti menginstall arch linux, yang berbeda hanya pada saat penginstallan package yang berkaitan dengan init system 😎.</p>
 </p>
     <hr>
     
+    
+    <h3 class="mb-3 font-weight-bold">Catatan Terkait</h3>
+    <ul>
+	  
+	  <li><a href="/catatan/menginstall-arch-linux/">Menginstall Arch Linux</a></li>
+	  
+    </ul>
     
     <hr>
     </div>

@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2020 19:47:45 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 17:48:28 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artix Linux</title>
+      <link>https://nesstero.github.io/tags/artix-linux/</link>
+      <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/artix-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Init</title>
+      <link>https://nesstero.github.io/tags/init/</link>
+      <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/init/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Runit</title>
+      <link>https://nesstero.github.io/tags/runit/</link>
+      <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/runit/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Arch Linux</title>
       <link>https://nesstero.github.io/tags/arch-linux/</link>

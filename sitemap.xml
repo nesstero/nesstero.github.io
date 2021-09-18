@@ -3,28 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
    
   <url>
-    <loc>https://nesstero.github.io/tags/arch-linux/</loc>
-    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+    <loc>https://nesstero.github.io/tags/artix-linux/</loc>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
   </url>
     
   <url>
     <loc>https://nesstero.github.io/catatan/</loc>
-    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
   </url>
     
   <url>
     <loc>https://nesstero.github.io/categories/</loc>
-    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
   </url>
     
   <url>
-    <loc>https://nesstero.github.io/catatan/menginstall-arch-linux/</loc>
-    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+    <loc>https://nesstero.github.io/tags/init/</loc>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/catatan/menginstall-artix-linux/</loc>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
   </url>
     
   <url>
     <loc>https://nesstero.github.io/categories/menginstall-sistem-operasi-gnu-linux/</loc>
-    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
   </url>
     
   <url>
@@ -33,7 +38,22 @@
   </url>
     
   <url>
+    <loc>https://nesstero.github.io/tags/runit/</loc>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
+  </url>
+    
+  <url>
     <loc>https://nesstero.github.io/tags/</loc>
+    <lastmod>2021-05-25T17:48:28+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/tags/arch-linux/</loc>
+    <lastmod>2020-10-22T19:47:45+07:00</lastmod>
+  </url>
+    
+  <url>
+    <loc>https://nesstero.github.io/catatan/menginstall-arch-linux/</loc>
     <lastmod>2020-10-22T19:47:45+07:00</lastmod>
   </url>
     
