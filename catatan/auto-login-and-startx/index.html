@@ -106,18 +106,14 @@ Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text e
 <h3 id="persiapan"><strong>Persiapan</strong></h3>
 <p>Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</p>
 <h3 id="menambahakan-user-yang-digunakan"><strong>Menambahakan user yang digunakan</strong></h3>
-<blockquote>
 <p><strong>Untuk pengguna systemd</strong> jalankan perintah <strong>systemctl edit getty@tty1</strong> dengan akses root,</p>
-</blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Service]</span>
 <span class="na">ExecStart</span><span class="o">=</span>
 <span class="na">ExecStart</span><span class="o">=</span><span class="s">-/usr/bin/agetty --autologin &lt;username&gt; --noclear %I $TERM</span>
 </code></pre></div><ul>
-<li><strong><code>&lt;username&gt;</code></strong> ganti dengan user yang akan digunakan untuk login secara otomatis</li>
+<li><strong><code>&lt;username&gt;</code></strong> ganti dengan user yang akan digunakan untuk login secara otomatis
+<strong>Untuk pengguna non-systemd</strong> dalam kasus ini kita menggunakan <strong>runit</strong> tambahkan <strong>&ndash;autologin <username></strong> pada file konfigurasi yang terletak di <strong>/etc/runit/sv/agetty-tty1/conf</strong></li>
 </ul>
-<blockquote>
-<p><strong>Untuk pengguna non-systemd</strong> dalam kasus ini kita menggunakan <strong>runit</strong> tambahkan <strong>&ndash;autologin <username></strong> pada file konfigurasi yang terletak di <strong>/etc/runit/sv/agetty-tty1/conf</strong></p>
-</blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [ -x /sbin/agetty -o -x /bin/agetty ]; then</span>
   <span class="c1"># util-linux specific settings</span>
   <span class="na">if [ &#34;${tty}&#34;</span> <span class="o">=</span> <span class="s">&#34;tty1&#34; ]; then
@@ -131,16 +127,12 @@ Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text e
 <li><strong><code>&lt;username&gt;</code></strong> ganti dengan user yang akan digunakan untuk login secara otomatis</li>
 </ul>
 <h2 id="menjalankan-perintah-startx"><strong>Menjalankan perintah startx</strong></h2>
-<p>Untuk menjalankan perintah startx secara otomatis kita bisa menambahkan konfigurasi pada file <strong>.profile</strong>, pada kasus ini kita menggunakan <strong>.zprofile</strong></p>
-<blockquote>
-<p><strong>Untuk pengguna systemd</strong></p>
-</blockquote>
+<p>Untuk menjalankan perintah startx secara otomatis kita bisa menambahkan konfigurasi pada file <strong>.profile</strong>, pada kasus ini kita menggunakan <strong>.zprofile</strong>
+<strong>Untuk pengguna systemd</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [[ -z &#34;$DISPLAY&#34; ]] &amp;&amp; [[ $(tty)</span> <span class="o">=</span> <span class="s">/dev/tty1 ]]; then
 </span><span class="s"> exec startx</span>
 <span class="na">fi</span>
-</code></pre></div><blockquote>
-<p><strong>Untuk pengguna non-systemd</strong> dalam kasus ini <strong>runit</strong></p>
-</blockquote>
+</code></pre></div><p><strong>Untuk pengguna non-systemd</strong> dalam kasus ini <strong>runit</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [[ -z &#34;$DISPLAY&#34; ]] &amp;&amp; [[ $(tty)</span> <span class="o">=</span> <span class="s">/dev/tty1 ]]; then
 </span><span class="s">  exec dbus-launch startx</span>
 <span class="na">fi</span>
