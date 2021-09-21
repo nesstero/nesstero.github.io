@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>runit on Nestero</title>
-    <link>https://nesstero.github.io/tags/runit/</link>
-    <description>Recent content in runit on Nestero</description>
+    <title>systemd on Nestero</title>
+    <link>https://nesstero.github.io/tags/systemd/</link>
+    <description>Recent content in systemd on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 18:05:20 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/runit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 18:05:20 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Auto Login and Startx for a Specific Tty</title>
       <link>https://nesstero.github.io/catatan/auto-login-and-startx/</link>
@@ -15,15 +15,6 @@
       <guid>https://nesstero.github.io/catatan/auto-login-and-startx/</guid>
       <description>Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.
 Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</description>
-    </item>
-    
-    <item>
-      <title>Menginstall Artix Linux dengan Init Runit</title>
-      <link>https://nesstero.github.io/catatan/menginstall-artix-linux/</link>
-      <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
-      
-      <guid>https://nesstero.github.io/catatan/menginstall-artix-linux/</guid>
-      <description>Artix Linux ?  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom. File iso artix linux bisa di dapatkan pada website resminya disini .</description>
     </item>
     
   </channel>

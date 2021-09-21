@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title> Auto Login and Startx for a Specific Tty </title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="author" content="Nestero" />
+<meta content="GNU/Linux, Open Source" name="keywords">
+<meta content="Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.
+Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing," name="description">
+<meta content="https://nesstero.github.io/img/og.png" name="image">
+
+<link href="https://nesstero.github.io/img/icon.svg" rel="icon">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<link href="https://nesstero.github.io/css/style.css" rel="stylesheet">
+<link href="https://nesstero.github.io/css/syntax.css" rel="stylesheet">
+
+
+
+
+
+
+</head>
+<body><div class="wrapper">
+<div class="sidebar">
+  <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+    <img class="mx-auto d-block w-70 bg-primary img-fluid rounded-circle mb-4 p-2" src="https://nesstero.github.io/img/icon.svg" alt="Nestero">
+    <h1 class="font-weight-bold">
+    Nestero
+    </h1>
+    <p class="mb-4">
+    Selamat Datang di Blog Sederhana ini 🥳🥳🥳
+    </p>
+    <div class="d-flex justify-content-center mb-5">
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-telegram"></i></a>
+      <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+
+<div class="container p-0">
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav m-auto">
+          <a href="https://nesstero.github.io/" class="nav-item nav-link active">Home</a>
+          <a href="https://nesstero.github.io/catatan" class="nav-item nav-link">Catatan</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Install</a>
+            <div class="dropdown-menu">
+              <a href="https://nesstero.github.io/catatan/menginstall-arch-linux/" class="dropdown-item">Arch Linux</a>
+              <a href="https://nesstero.github.io/catatan/menginstall-artix-linux/" class="dropdown-item">Artix Linux</a>
+            </div>
+        </div>
+        <a href="https://nesstero.github.io//pencarian" class="nav-item nav-link">Pencarian</a>
+        </div>
+      </div>
+  </nav>
+</div>
+
+
+
+
+
+<div class="container py-5 px-2 bg-white">
+  <div class="row px-4">
+    <div class="col-12">
+      <h1 class="mb-3 font-weight-bold">Auto Login and Startx for a Specific Tty</h1>
+    <div class="d-flex">
+    
+    
+    <p class="mr-3 text-muted"><i class="fa fa-edit"></i> 
+    25 May 2021
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/zsh" class="text-primary">Zsh</a>
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/tty" class="text-primary">Tty</a>
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/systemd" class="text-primary">Systemd</a>
+    </p>
+    
+    <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
+    <a href="/tags/runit" class="text-primary">Runit</a>
+    </p>
+    
+    </div>
+    <p><h2 id="tips-and-tricks"><strong>Tips and Tricks</strong></h2>
+<p>Tips and Tricks kali ini kita akan membahas <strong>bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx</strong>.</p>
+<h3 id="persiapan"><strong>Persiapan</strong></h3>
+<p>Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</p>
+<h3 id="menambahakan-user-yang-digunakan"><strong>Menambahakan user yang digunakan</strong></h3>
+<blockquote>
+<p><strong>Untuk pengguna systemd</strong> jalankan perintah <strong>systemctl edit getty@tty1</strong> dengan akses root,</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Service]</span>
+<span class="na">ExecStart</span><span class="o">=</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">-/usr/bin/agetty --autologin &lt;username&gt; --noclear %I $TERM</span>
+</code></pre></div><ul>
+<li><strong><code>&lt;username&gt;</code></strong> ganti dengan user yang akan digunakan untuk login secara otomatis</li>
+</ul>
+<blockquote>
+<p><strong>Untuk pengguna non-systemd</strong> dalam kasus ini kita menggunakan <strong>runit</strong> tambahkan <strong>&ndash;autologin <username></strong> pada file konfigurasi yang terletak di <strong>/etc/runit/sv/agetty-tty1/conf</strong></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [ -x /sbin/agetty -o -x /bin/agetty ]; then</span>
+  <span class="c1"># util-linux specific settings</span>
+  <span class="na">if [ &#34;${tty}&#34;</span> <span class="o">=</span> <span class="s">&#34;tty1&#34; ]; then
+</span><span class="s">     GETTY_ARGS=&#34;--noclear --autologin &lt;username&gt;&#34;
+</span><span class="s">  fi</span>
+<span class="na">fi</span>
+
+<span class="na">BAUD_RATE</span><span class="o">=</span><span class="s">38400</span>
+<span class="na">TERM_NAME</span><span class="o">=</span><span class="s">linux</span>
+</code></pre></div><ul>
+<li><strong><code>&lt;username&gt;</code></strong> ganti dengan user yang akan digunakan untuk login secara otomatis</li>
+</ul>
+<h2 id="menjalankan-perintah-startx"><strong>Menjalankan perintah startx</strong></h2>
+<p>Untuk menjalankan perintah startx secara otomatis kita bisa menambahkan konfigurasi pada file <strong>.profile</strong>, pada kasus ini kita menggunakan <strong>.zprofile</strong></p>
+<blockquote>
+<p><strong>Untuk pengguna systemd</strong></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [[ -z &#34;$DISPLAY&#34; ]] &amp;&amp; [[ $(tty)</span> <span class="o">=</span> <span class="s">/dev/tty1 ]]; then
+</span><span class="s"> exec startx</span>
+<span class="na">fi</span>
+</code></pre></div><blockquote>
+<p><strong>Untuk pengguna non-systemd</strong> dalam kasus ini <strong>runit</strong></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [[ -z &#34;$DISPLAY&#34; ]] &amp;&amp; [[ $(tty)</span> <span class="o">=</span> <span class="s">/dev/tty1 ]]; then
+</span><span class="s">  exec dbus-launch startx</span>
+<span class="na">fi</span>
+</code></pre></div><h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
+<p>Tips and Tricks ini cocok bagi yang tidak mau di repotkan untuk menggunakan display manager.</p>
+</p>
+    </div>
+    <div class="col-12 py-4">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nesstero-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+</div>
+
+  <div class="container py-4 bg-secondary text-center">
+    <p class="m-0 text-white">
+    &copy; <a class="text-white font-weight-bold" href="https://nesstero.github.io/">Nestero</a>. All Rights Reserved.</a>
+    </p>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://nesstero.github.io/js/main.js"></script>
+
+<script src="https://nesstero.github.io/js/cari.js"></script>
+</div>
+</body>
+</html>

@@ -6,14 +6,24 @@
     <description>Recent content in Catatans on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 17:48:28 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/catatan/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 18:05:20 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/catatan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auto Login and Startx for a Specific Tty</title>
+      <link>https://nesstero.github.io/catatan/auto-login-and-startx/</link>
+      <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/auto-login-and-startx/</guid>
+      <description>Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.
+Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</description>
+    </item>
+    
     <item>
       <title>Menginstall Artix Linux dengan Init Runit</title>
       <link>https://nesstero.github.io/catatan/menginstall-artix-linux/</link>
       <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/menginstall-artix-linux/</guid>
-      <description>Artix Linux ?  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom.</description>
+      <description>Artix Linux ?  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom. File iso artix linux bisa di dapatkan pada website resminya disini .</description>
     </item>
     
     <item>
@@ -22,7 +32,7 @@
       <pubDate>Thu, 22 Oct 2020 19:47:45 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/menginstall-arch-linux/</guid>
-      <description>Arch Linux ?  Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux.</description>
+      <description>Arch Linux ?  Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux. Arch linux adalah salah satu dari sekian banyak distribusi gnu/linux yang menganut prinsip KISS katanya 😂.</description>
     </item>
     
   </channel>

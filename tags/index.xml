@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 17:48:28 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 18:05:20 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>runit</title>
+      <link>https://nesstero.github.io/tags/runit/</link>
+      <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/runit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>systemd</title>
+      <link>https://nesstero.github.io/tags/systemd/</link>
+      <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/systemd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tty</title>
+      <link>https://nesstero.github.io/tags/tty/</link>
+      <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/tty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>https://nesstero.github.io/tags/zsh/</link>
+      <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Artix Linux</title>
       <link>https://nesstero.github.io/tags/artix-linux/</link>
@@ -22,15 +58,6 @@
       <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
       
       <guid>https://nesstero.github.io/tags/init/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Runit</title>
-      <link>https://nesstero.github.io/tags/runit/</link>
-      <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
-      
-      <guid>https://nesstero.github.io/tags/runit/</guid>
       <description></description>
     </item>
     
