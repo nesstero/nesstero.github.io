@@ -1,36 +1,36 @@
 User-agent: *
 
-Disallow: /catatan/auto-login-and-startx/
+Allow: /catatan/auto-login-and-startx/
 
-Disallow: /catatan/
+Allow: /catatan/
 
-Disallow: /categories/
+Allow: /categories/
 
-Disallow: /
+Allow: /
 
-Disallow: /tags/runit/
+Allow: /tags/runit/
 
-Disallow: /tags/systemd/
+Allow: /tags/systemd/
 
-Disallow: /tags/
+Allow: /tags/
 
-Disallow: /categories/tips-and-tricks/
+Allow: /categories/tips-and-tricks/
 
-Disallow: /tags/tty/
+Allow: /tags/tty/
 
-Disallow: /tags/zsh/
+Allow: /tags/zsh/
 
-Disallow: /tags/artix-linux/
+Allow: /tags/artix-linux/
 
-Disallow: /tags/init/
+Allow: /tags/init/
 
-Disallow: /catatan/menginstall-artix-linux/
+Allow: /catatan/menginstall-artix-linux/
 
-Disallow: /categories/menginstall-sistem-operasi-gnu-linux/
+Allow: /categories/menginstall-sistem-operasi-gnu-linux/
 
-Disallow: /tags/arch-linux/
+Allow: /tags/arch-linux/
 
-Disallow: /catatan/menginstall-arch-linux/
+Allow: /catatan/menginstall-arch-linux/
 
-Disallow: /pencarian/
+Allow: /pencarian/
 
