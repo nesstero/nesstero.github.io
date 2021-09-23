@@ -1,3 +1,4 @@
+Sitemap: http://nesstero.github.io/sitemap.xml
 User-agent: *
 
 Allow: /catatan/auto-login-and-startx/
