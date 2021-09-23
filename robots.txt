@@ -1,0 +1,36 @@
+User-agent: *
+
+Disallow: /catatan/auto-login-and-startx/
+
+Disallow: /catatan/
+
+Disallow: /categories/
+
+Disallow: /
+
+Disallow: /tags/runit/
+
+Disallow: /tags/systemd/
+
+Disallow: /tags/
+
+Disallow: /categories/tips-and-tricks/
+
+Disallow: /tags/tty/
+
+Disallow: /tags/zsh/
+
+Disallow: /tags/artix-linux/
+
+Disallow: /tags/init/
+
+Disallow: /catatan/menginstall-artix-linux/
+
+Disallow: /categories/menginstall-sistem-operasi-gnu-linux/
+
+Disallow: /tags/arch-linux/
+
+Disallow: /catatan/menginstall-arch-linux/
+
+Disallow: /pencarian/
+
