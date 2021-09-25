@@ -1,19 +1,31 @@
 Sitemap: http://nesstero.github.io/sitemap.xml
 User-agent: *
 
-Allow: /catatan/auto-login-and-startx/
-
 Allow: /catatan/
 
 Allow: /categories/
 
+Allow: /catatan/enabling-tapping-touchpad/
+
+Allow: /categories/hardware/
+
 Allow: /
+
+Allow: /tags/
+
+Allow: /tags/tapping/
+
+Allow: /tags/touchpad/
+
+Allow: /tags/xinput/
+
+Allow: /tags/xorg/
+
+Allow: /catatan/auto-login-and-startx/
 
 Allow: /tags/runit/
 
 Allow: /tags/systemd/
-
-Allow: /tags/
 
 Allow: /categories/tips-and-tricks/
 

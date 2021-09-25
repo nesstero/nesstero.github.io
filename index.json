@@ -1,5 +1,9 @@
 [
     {
+      "title": "Enabling Tapping Touchpad",
+      "url": "/catatan/enabling-tapping-touchpad/"
+    },
+    {
       "title": "Auto Login and Startx for a Specific Tty",
       "url": "/catatan/auto-login-and-startx/"
     },

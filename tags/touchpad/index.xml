@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Touchpad on Nestero</title>
+    <link>https://nesstero.github.io/tags/touchpad/</link>
+    <description>Recent content in Touchpad on Nestero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jun 2021 19:55:47 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/touchpad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enabling Tapping Touchpad</title>
+      <link>https://nesstero.github.io/catatan/enabling-tapping-touchpad/</link>
+      <pubDate>Tue, 22 Jun 2021 19:55:47 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/enabling-tapping-touchpad/</guid>
+      <description>Problem Tidak bisa tapping pada touchpad ?.., mungkin ada yang pernah mengalami permasalahaan ini saat menggunakan xorg pada sistem operasi gnu/linux, permasalahaan ini sebetulnya cukup mudah untuk diatasi dengan cara mengenablekan libinput Tapping pada xinput.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -38,7 +38,7 @@ if (!doNotTrack) {
 
 </head>
 <body>
-<div class="wrapper">
+    <div class="wrapper">
 <div class="sidebar">
   <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
     <img class="mx-auto d-block w-70 bg-primary img-fluid rounded-circle mb-4 p-2" src="https://nesstero.github.io/img/icon.svg" alt="Nestero">
@@ -114,7 +114,7 @@ if (!doNotTrack) {
     </p>
     
     </div>
-    <p><h2 id="tips-and-tricks"><strong>Tips and Tricks</strong></h2>
+    <p><h3 id="tips-and-tricks"><strong>Tips and Tricks</strong></h3>
 <p>Tips and Tricks kali ini kita akan membahas <strong>bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx</strong>.</p>
 <h3 id="persiapan"><strong>Persiapan</strong></h3>
 <p>Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</p>
@@ -139,7 +139,7 @@ if (!doNotTrack) {
 </code></pre></div><ul>
 <li><strong><code>&lt;username&gt;</code></strong> ganti dengan user yang akan digunakan untuk login secara otomatis</li>
 </ul>
-<h2 id="menjalankan-perintah-startx"><strong>Menjalankan perintah startx</strong></h2>
+<h3 id="menjalankan-perintah-startx"><strong>Menjalankan perintah startx</strong></h3>
 <p>Untuk menjalankan perintah startx secara otomatis kita bisa menambahkan konfigurasi pada file <strong>.profile</strong>, pada kasus ini kita menggunakan <strong>.zprofile</strong>
 <strong>Untuk pengguna systemd</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">if [[ -z &#34;$DISPLAY&#34; ]] &amp;&amp; [[ $(tty)</span> <span class="o">=</span> <span class="s">/dev/tty1 ]]; then
@@ -225,5 +225,5 @@ if (!doNotTrack) {
 <script src="https://nesstero.github.io/js/main.js"></script>
 <script src="https://nesstero.github.io/js/search.js"></script>
 </div>
-</body>
+  </body>
 </html>
