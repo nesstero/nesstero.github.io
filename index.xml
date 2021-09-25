@@ -23,7 +23,17 @@ Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text e
       <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/menginstall-artix-linux/</guid>
-      <description>Artix Linux ?  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom. File iso artix linux bisa di dapatkan pada website resminya disini .</description>
+      <description>Artix Linux  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom. File iso artix linux bisa di dapatkan pada website resminya disini .</description>
+    </item>
+    
+    <item>
+      <title>Uniform Look for Qt and GTK Applications</title>
+      <link>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</link>
+      <pubDate>Tue, 22 Dec 2020 19:49:09 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</guid>
+      <description>Tips and Trick Tips and Trick kali ini kita akan membuat tampilan dari apps yang berbasis qt menggunakan themes dari gtk, dalam kasus ini kita menggunakan themes gtk2.
+Gtk  Gtk adalah kependekan dari GIMP ToolKit, GIMP ?</description>
     </item>
     
     <item>
@@ -32,7 +42,7 @@ Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text e
       <pubDate>Thu, 22 Oct 2020 19:47:45 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/menginstall-arch-linux/</guid>
-      <description>Arch Linux ?  Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux. Arch linux adalah salah satu dari sekian banyak distribusi gnu/linux yang menganut prinsip KISS katanya 😂.</description>
+      <description>Arch Linux  Apa itu arch linux 🤔🤔, kita akan bahas sedikit apa itu arch linux. Arch linux adalah salah satu dari sekian banyak distribusi gnu/linux yang menganut prinsip KISS katanya 😂.</description>
     </item>
     
   </channel>

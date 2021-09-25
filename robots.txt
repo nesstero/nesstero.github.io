@@ -29,6 +29,14 @@ Allow: /catatan/menginstall-artix-linux/
 
 Allow: /categories/menginstall-sistem-operasi-gnu-linux/
 
+Allow: /tags/gtk/
+
+Allow: /tags/qt/
+
+Allow: /tags/themes/
+
+Allow: /catatan/uniform-look-for-qt-and-gtk/
+
 Allow: /tags/arch-linux/
 
 Allow: /catatan/menginstall-arch-linux/

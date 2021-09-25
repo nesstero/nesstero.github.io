@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qt on Nestero</title>
+    <link>https://nesstero.github.io/tags/qt/</link>
+    <description>Recent content in Qt on Nestero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Dec 2020 19:49:09 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/qt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uniform Look for Qt and GTK Applications</title>
+      <link>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</link>
+      <pubDate>Tue, 22 Dec 2020 19:49:09 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</guid>
+      <description>Tips and Trick Tips and Trick kali ini kita akan membuat tampilan dari apps yang berbasis qt menggunakan themes dari gtk, dalam kasus ini kita menggunakan themes gtk2.
+Gtk  Gtk adalah kependekan dari GIMP ToolKit, GIMP ?</description>
+    </item>
+    
+  </channel>
+</rss>

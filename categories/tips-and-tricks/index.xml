@@ -17,5 +17,15 @@
 Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</description>
     </item>
     
+    <item>
+      <title>Uniform Look for Qt and GTK Applications</title>
+      <link>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</link>
+      <pubDate>Tue, 22 Dec 2020 19:49:09 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</guid>
+      <description>Tips and Trick Tips and Trick kali ini kita akan membuat tampilan dari apps yang berbasis qt menggunakan themes dari gtk, dalam kasus ini kita menggunakan themes gtk2.
+Gtk  Gtk adalah kependekan dari GIMP ToolKit, GIMP ?</description>
+    </item>
+    
   </channel>
 </rss>
