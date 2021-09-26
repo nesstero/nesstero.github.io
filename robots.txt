@@ -1,6 +1,10 @@
 Sitemap: http://nesstero.github.io/sitemap.xml
 User-agent: *
 
+Allow: /gallery/
+
+Allow: /
+
 Allow: /catatan/
 
 Allow: /categories/
@@ -8,8 +12,6 @@ Allow: /categories/
 Allow: /catatan/enabling-tapping-touchpad/
 
 Allow: /categories/hardware/
-
-Allow: /
 
 Allow: /tags/
 
