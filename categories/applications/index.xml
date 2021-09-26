@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Applications on Nestero</title>
+    <link>https://nesstero.github.io/categories/applications/</link>
+    <description>Recent content in Applications on Nestero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 May 2021 19:26:24 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/categories/applications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List Applications</title>
+      <link>https://nesstero.github.io/catatan/list-applications/</link>
+      <pubDate>Tue, 25 May 2021 19:26:24 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/list-applications/</guid>
+      <description>List Applications Kita terkadang merasa bingung setelah menginstall sistem operasi yang hanya menginstall system corenya saja, aplikasi pendukung apa saja yang akan kita install setelah penginstallan core selesai, untuk itu list ini dibuat agar tidak bingung lagi setelah installasi sistem operasi selesai 😊</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -21,6 +21,12 @@ Allow: /tags/xinput/
 
 Allow: /tags/xorg/
 
+Allow: /categories/applications/
+
+Allow: /tags/applications/
+
+Allow: /catatan/list-applications/
+
 Allow: /catatan/auto-login-and-startx/
 
 Allow: /tags/runit/
