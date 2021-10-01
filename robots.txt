@@ -49,6 +49,12 @@ Allow: /catatan/menginstall-artix-linux/
 
 Allow: /categories/menginstall-sistem-operasi-gnu-linux/
 
+Allow: /categories/irc/
+
+Allow: /catatan/menginstall-irc-client-weechat/
+
+Allow: /tags/weechat/
+
 Allow: /tags/gtk/
 
 Allow: /tags/qt/
