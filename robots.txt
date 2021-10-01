@@ -31,6 +31,18 @@ Allow: /catatan/menginstall-dan-mengkonfigurasi-mutt-email-client/
 
 Allow: /tags/mutt/
 
+Allow: /catatan/menginstall-virtual-machine-manager-pada-artix-runit/
+
+Allow: /tags/kvm/
+
+Allow: /tags/qemu/
+
+Allow: /tags/runit/
+
+Allow: /categories/virtual-machine/
+
+Allow: /tags/virtual-manager/
+
 Allow: /categories/applications/
 
 Allow: /tags/applications/
@@ -38,8 +50,6 @@ Allow: /tags/applications/
 Allow: /catatan/list-applications/
 
 Allow: /catatan/auto-login-and-startx/
-
-Allow: /tags/runit/
 
 Allow: /tags/systemd/
 

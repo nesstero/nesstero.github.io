@@ -62,20 +62,47 @@
     </item>
     
     <item>
-      <title>applications</title>
-      <link>https://nesstero.github.io/tags/applications/</link>
-      <pubDate>Tue, 25 May 2021 19:26:24 +0700</pubDate>
+      <title>Kvm</title>
+      <link>https://nesstero.github.io/tags/kvm/</link>
+      <pubDate>Wed, 09 Jun 2021 19:32:50 +0700</pubDate>
       
-      <guid>https://nesstero.github.io/tags/applications/</guid>
+      <guid>https://nesstero.github.io/tags/kvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qemu</title>
+      <link>https://nesstero.github.io/tags/qemu/</link>
+      <pubDate>Wed, 09 Jun 2021 19:32:50 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/qemu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>runit</title>
       <link>https://nesstero.github.io/tags/runit/</link>
-      <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
+      <pubDate>Wed, 09 Jun 2021 19:32:50 +0700</pubDate>
       
       <guid>https://nesstero.github.io/tags/runit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Manager</title>
+      <link>https://nesstero.github.io/tags/virtual-manager/</link>
+      <pubDate>Wed, 09 Jun 2021 19:32:50 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/virtual-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>applications</title>
+      <link>https://nesstero.github.io/tags/applications/</link>
+      <pubDate>Tue, 25 May 2021 19:26:24 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/tags/applications/</guid>
       <description></description>
     </item>
     

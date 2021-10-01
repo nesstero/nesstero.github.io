@@ -27,6 +27,17 @@ Menginstall Mutt $ sudo pacman -S mutt Konfigurasi Muut dengan gmail mkdir -p ~/
     </item>
     
     <item>
+      <title>Install Qemu Virtual Machine Manager On Artix Runit</title>
+      <link>https://nesstero.github.io/catatan/menginstall-virtual-machine-manager-pada-artix-runit/</link>
+      <pubDate>Wed, 09 Jun 2021 19:32:50 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/menginstall-virtual-machine-manager-pada-artix-runit/</guid>
+      <description>Qemu  Qemu merupakan machine emulator dan virtualizer.
+Kvm  KVM kependekan dari Kernel-based Virtual Machine adalah modul virtualisasi di kernel Linux yang memungkinkan kernel berfungsi sebagai hypervisor.
+Menginstall qemu dan virtual manager $ sudo pacman -S qemu virt-manager libvirt-runit vde2 dnsmasq ebtables bridge-utils openbsd-netcat  Jika package tidak di temukan aktifkan repo dari arch linux extra, dan community dan pastikan repo artix lib32 aktif  Konfigurasi libvirtd konfigurasi pada file /etc/libvirt/libvirtd.</description>
+    </item>
+    
+    <item>
       <title>List Applications</title>
       <link>https://nesstero.github.io/catatan/list-applications/</link>
       <pubDate>Tue, 25 May 2021 19:26:24 +0700</pubDate>
