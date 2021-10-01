@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gmail on Nestero</title>
+    <link>https://nesstero.github.io/tags/gmail/</link>
+    <description>Recent content in Gmail on Nestero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jun 2021 11:38:32 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install and Configure Mutt E-mail Client</title>
+      <link>https://nesstero.github.io/catatan/menginstall-dan-mengkonfigurasi-mutt-email-client/</link>
+      <pubDate>Sun, 13 Jun 2021 11:38:32 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/menginstall-dan-mengkonfigurasi-mutt-email-client/</guid>
+      <description>Mutt  Muut adalah salah satu email client yang berbasis cli
+Menginstall Mutt $ sudo pacman -S mutt Konfigurasi Muut dengan gmail mkdir -p ~/.mutt/cache/headers mkdir ~/.mutt/cache/bodies touch ~/.mutt/certificates touch ~/.</description>
+    </item>
+    
+  </channel>
+</rss>

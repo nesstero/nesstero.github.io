@@ -23,6 +23,14 @@ Allow: /tags/xinput/
 
 Allow: /tags/xorg/
 
+Allow: /categories/e-mail-client/
+
+Allow: /tags/gmail/
+
+Allow: /catatan/menginstall-dan-mengkonfigurasi-mutt-email-client/
+
+Allow: /tags/mutt/
+
 Allow: /categories/applications/
 
 Allow: /tags/applications/
