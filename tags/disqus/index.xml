@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Disqus on Nestero</title>
+    <link>https://nesstero.github.io/tags/disqus/</link>
+    <description>Recent content in Disqus on Nestero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Oct 2021 11:16:35 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hide Ads Disqus</title>
+      <link>https://nesstero.github.io/catatan/hide-ads-disqus/</link>
+      <pubDate>Mon, 04 Oct 2021 11:16:35 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/hide-ads-disqus/</guid>
+      <description>Tips and Tricks Tips and Trick kali ini kita akan membahas tentang Disqus yang belakangan ini membuat feature iklan pada disqus free dan tidak bisa di-disable, mau tidak mau untuk mendisable iklan harus upgrade dan tentunya berbayar 😭.</description>
+    </item>
+    
+  </channel>
+</rss>

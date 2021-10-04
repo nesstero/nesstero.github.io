@@ -1,19 +1,27 @@
 Sitemap: http://nesstero.github.io/sitemap.xml
 User-agent: *
 
-Allow: /gallery/
-
-Allow: /
+Allow: /tags/ads/
 
 Allow: /catatan/
 
 Allow: /categories/
 
+Allow: /tags/disqus/
+
+Allow: /catatan/hide-ads-disqus/
+
+Allow: /
+
+Allow: /tags/
+
+Allow: /categories/tips-and-tricks/
+
+Allow: /gallery/
+
 Allow: /catatan/enabling-tapping-touchpad/
 
 Allow: /categories/hardware/
-
-Allow: /tags/
 
 Allow: /tags/tapping/
 
@@ -43,17 +51,15 @@ Allow: /categories/virtual-machine/
 
 Allow: /tags/virtual-manager/
 
-Allow: /categories/applications/
-
 Allow: /tags/applications/
+
+Allow: /categories/applications/
 
 Allow: /catatan/list-applications/
 
 Allow: /catatan/auto-login-and-startx/
 
 Allow: /tags/systemd/
-
-Allow: /categories/tips-and-tricks/
 
 Allow: /tags/tty/
 
