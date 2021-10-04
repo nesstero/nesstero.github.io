@@ -1,280 +1,280 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/gallery/</loc>
     <lastmod>2021-09-26T21:07:36+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/</loc>
     <lastmod>2021-09-26T21:07:36+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/ads/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/disqus/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/hide-ads-disqus/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/tips-and-tricks/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/enabling-tapping-touchpad/</loc>
     <lastmod>2021-06-22T19:55:47+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/hardware/</loc>
     <lastmod>2021-06-22T19:55:47+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/tapping/</loc>
     <lastmod>2021-06-22T19:55:47+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/touchpad/</loc>
     <lastmod>2021-06-22T19:55:47+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/xinput/</loc>
     <lastmod>2021-06-22T19:55:47+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/xorg/</loc>
     <lastmod>2021-06-22T19:55:47+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/e-mail-client/</loc>
     <lastmod>2021-06-13T11:38:32+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/gmail/</loc>
     <lastmod>2021-06-13T11:38:32+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/menginstall-dan-mengkonfigurasi-mutt-email-client/</loc>
     <lastmod>2021-06-13T11:38:32+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/mutt/</loc>
     <lastmod>2021-06-13T11:38:32+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/menginstall-virtual-machine-manager-pada-artix-runit/</loc>
     <lastmod>2021-06-09T19:32:50+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/kvm/</loc>
     <lastmod>2021-06-09T19:32:50+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/qemu/</loc>
     <lastmod>2021-06-09T19:32:50+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/runit/</loc>
     <lastmod>2021-06-09T19:32:50+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/virtual-machine/</loc>
     <lastmod>2021-06-09T19:32:50+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/virtual-manager/</loc>
     <lastmod>2021-06-09T19:32:50+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/applications/</loc>
     <lastmod>2021-05-25T19:26:24+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/applications/</loc>
     <lastmod>2021-05-25T19:26:24+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/list-applications/</loc>
     <lastmod>2021-05-25T19:26:24+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/auto-login-and-startx/</loc>
     <lastmod>2021-05-25T18:05:20+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/systemd/</loc>
     <lastmod>2021-05-25T18:05:20+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/tty/</loc>
     <lastmod>2021-05-25T18:05:20+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/zsh/</loc>
     <lastmod>2021-05-25T18:05:20+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/artix-linux/</loc>
     <lastmod>2021-05-25T17:48:28+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/init/</loc>
     <lastmod>2021-05-25T17:48:28+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/menginstall-artix-linux/</loc>
     <lastmod>2021-05-25T17:48:28+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/menginstall-sistem-operasi-gnu-linux/</loc>
     <lastmod>2021-05-25T17:48:28+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/categories/irc/</loc>
     <lastmod>2020-12-30T15:46:42+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/menginstall-irc-client-weechat/</loc>
     <lastmod>2020-12-30T15:46:42+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/weechat/</loc>
     <lastmod>2020-12-30T15:46:42+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/gtk/</loc>
     <lastmod>2020-12-22T19:49:09+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/qt/</loc>
     <lastmod>2020-12-22T19:49:09+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/themes/</loc>
     <lastmod>2020-12-22T19:49:09+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</loc>
     <lastmod>2020-12-22T19:49:09+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/tags/arch-linux/</loc>
     <lastmod>2020-10-22T19:47:45+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/catatan/menginstall-arch-linux/</loc>
     <lastmod>2020-10-22T19:47:45+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-  <sitemap>
+  <url>
     <loc>https://nesstero.github.io/pencarian/</loc>
     <lastmod>2021-09-15T22:59:44+07:00</lastmod>
 		
-	</sitemap>
+	</url>
 	
-</sitemapindex>
+</urlset>
