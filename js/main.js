@@ -18,14 +18,11 @@
     });
 })(jQuery);
 
-(function($){
-    setInterval(() => {
-        $.each($('iframe'), (arr,x) => {
-            let src = $(x).attr('src');
-            if (src && src.match(/(ads-iframe)|(disqusads)/gi)) {
-                $(x).remove();
-            }
-        });
-    }, 300);
-})(jQuery);
+$(window).on('load', function () {
+    $("iframe[id^='dsq-app']").each(function (i, el) {
+        if(i===0 || i===2) {
+            el.remove();
+        };
+    });
+});
 
