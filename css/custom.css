@@ -1,4 +1,4 @@
-iframe[src*="ads-iframe"] { display: none; }
+iframe[src*="ads-iframe"] { display: none !important ; }
 
 .highlight-wrapper {
   display: block;
