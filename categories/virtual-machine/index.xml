@@ -14,8 +14,7 @@
       
       <guid>https://nesstero.github.io/catatan/menginstall-virtual-machine-manager-pada-artix-runit/</guid>
       <description>Qemu  Qemu merupakan machine emulator dan virtualizer.
-Kvm  KVM kependekan dari Kernel-based Virtual Machine adalah modul virtualisasi di kernel Linux yang memungkinkan kernel berfungsi sebagai hypervisor.
-Menginstall qemu dan virtual manager $ sudo pacman -S qemu virt-manager libvirt-runit vde2 dnsmasq ebtables bridge-utils openbsd-netcat  Jika package tidak di temukan aktifkan repo dari arch linux extra, dan community dan pastikan repo artix lib32 aktif  Konfigurasi libvirtd konfigurasi pada file /etc/libvirt/libvirtd.</description>
+Kvm  KVM kependekan dari Kernel-based Virtual Machine adalah modul virtualisasi di kernel Linux yang memungkinkan kernel berfungsi sebagai hypervisor.</description>
     </item>
     
   </channel>

@@ -14,8 +14,7 @@
       
       <guid>https://nesstero.github.io/catatan/menginstall-virtual-machine-manager-pada-artix-runit/</guid>
       <description>Qemu  Qemu merupakan machine emulator dan virtualizer.
-Kvm  KVM kependekan dari Kernel-based Virtual Machine adalah modul virtualisasi di kernel Linux yang memungkinkan kernel berfungsi sebagai hypervisor.
-Menginstall qemu dan virtual manager $ sudo pacman -S qemu virt-manager libvirt-runit vde2 dnsmasq ebtables bridge-utils openbsd-netcat  Jika package tidak di temukan aktifkan repo dari arch linux extra, dan community dan pastikan repo artix lib32 aktif  Konfigurasi libvirtd konfigurasi pada file /etc/libvirt/libvirtd.</description>
+Kvm  KVM kependekan dari Kernel-based Virtual Machine adalah modul virtualisasi di kernel Linux yang memungkinkan kernel berfungsi sebagai hypervisor.</description>
     </item>
     
     <item>
@@ -24,8 +23,7 @@ Menginstall qemu dan virtual manager $ sudo pacman -S qemu virt-manager libvirt-
       <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/auto-login-and-startx/</guid>
-      <description>Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.
-Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</description>
+      <description>Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.</description>
     </item>
     
     <item>
@@ -34,7 +32,7 @@ Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text e
       <pubDate>Tue, 25 May 2021 17:48:28 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/menginstall-artix-linux/</guid>
-      <description>Artix Linux  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom. File iso artix linux bisa di dapatkan pada website resminya disini .</description>
+      <description>Artix Linux  Artix linux adalah salah satu distribusi gnu/linux based on arch linux yang mengusung init freedom.</description>
     </item>
     
   </channel>

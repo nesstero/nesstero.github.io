@@ -22,8 +22,7 @@
       <pubDate>Tue, 25 May 2021 18:05:20 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/auto-login-and-startx/</guid>
-      <description>Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.
-Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text editor 😁, jadi siapkan text editor kesayangan masing-masing,</description>
+      <description>Tips and Tricks Tips and Tricks kali ini kita akan membahas bagaimana caranya membuat system agar otomatis login dengan user tertentu dan otomatis menjalankan perintah startx.</description>
     </item>
     
     <item>
@@ -32,8 +31,7 @@ Persiapan Langsung saja seperti biasa, bahan yang dibutuhkan hanya sebuah text e
       <pubDate>Tue, 22 Dec 2020 19:49:09 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/uniform-look-for-qt-and-gtk/</guid>
-      <description>Tips and Trick Tips and Trick kali ini kita akan membuat tampilan dari apps yang berbasis qt menggunakan themes dari gtk, dalam kasus ini kita menggunakan themes gtk2.
-Gtk  Gtk adalah kependekan dari GIMP ToolKit, GIMP ?</description>
+      <description>Tips and Trick Tips and Trick kali ini kita akan membuat tampilan dari apps yang berbasis qt menggunakan themes dari gtk, dalam kasus ini kita menggunakan themes gtk2.</description>
     </item>
     
   </channel>

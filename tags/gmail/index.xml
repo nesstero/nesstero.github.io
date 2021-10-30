@@ -13,8 +13,7 @@
       <pubDate>Sun, 13 Jun 2021 11:38:32 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/menginstall-dan-mengkonfigurasi-mutt-email-client/</guid>
-      <description>Mutt  Muut adalah salah satu email client yang berbasis cli
-Menginstall Mutt $ sudo pacman -S mutt Konfigurasi Muut dengan gmail mkdir -p ~/.mutt/cache/headers mkdir ~/.mutt/cache/bodies touch ~/.mutt/certificates touch ~/.</description>
+      <description>Mutt  Muut adalah salah satu email client yang berbasis cli</description>
     </item>
     
   </channel>
