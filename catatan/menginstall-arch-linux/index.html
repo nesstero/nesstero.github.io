@@ -152,13 +152,15 @@ timedatectl set-timezone Asia/Jakarta
 <li>timezone (WIB)</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">nano /etc/locale.gen
-locale-gen
+</code></pre></div><ul>
+<li>uncomment <strong>en_US.UTF-8</strong> dan <strong>id_ID.UTF-8</strong> pada file <strong>locale.gen</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">locale-gen
 <span class="nb">echo</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 &gt; /etc/locale.conf
 <span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
 </code></pre></div><ul>
 <li> <a href="https://wiki.archlinux.org/title/Locale" title="apa itu locale ?" rel="noopener noreferrer" target="_blank">locale</a>
 </li>
-<li>uncomment <strong>en_US.UTF-8</strong> dan <strong>id_ID.UTF-8</strong> pada file <strong>locale.gen</strong></li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">echo</span> myarch &gt; /etc/hostname
 touch /etc/hosts
