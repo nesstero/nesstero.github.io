@@ -6,7 +6,16 @@
     <description>Recent content in Catatans on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Aug 2021 11:16:35 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/catatan/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 20:42:48 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/catatan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colored Characters and Emoji in Dwm</title>
+      <link>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</link>
+      <pubDate>Sat, 06 Nov 2021 20:42:48 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</guid>
+      <description>Problem Tidak bisa menggunakan colored characters dan emoji pada bar atau panel dwm.</description>
+    </item>
+    
     <item>
       <title>Hide Ads Disqus</title>
       <link>https://nesstero.github.io/catatan/hide-ads-disqus/</link>
