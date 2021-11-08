@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
   <url>
+    <loc>https://nesstero.github.io/python_basic/introduction/</loc>
+    <lastmod>2021-11-08T18:25:56+07:00</lastmod>
+		
+	</url>
+	
+  <url>
+    <loc>https://nesstero.github.io/</loc>
+    <lastmod>2021-11-08T18:25:56+07:00</lastmod>
+		
+	</url>
+	
+  <url>
+    <loc>https://nesstero.github.io/python_basic/</loc>
+    <lastmod>2021-11-08T18:25:56+07:00</lastmod>
+		
+	</url>
+	
+  <url>
     <loc>https://nesstero.github.io/catatan/</loc>
     <lastmod>2021-11-06T20:42:48+07:00</lastmod>
 		
@@ -39,12 +57,6 @@
 	
   <url>
     <loc>https://nesstero.github.io/tags/emoji/</loc>
-    <lastmod>2021-11-06T20:42:48+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/</loc>
     <lastmod>2021-11-06T20:42:48+07:00</lastmod>
 		
 	</url>
