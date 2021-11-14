@@ -6,7 +6,16 @@
     <description>Recent content in dwm on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Nov 2021 20:42:48 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/dwm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Nov 2021 17:08:38 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/dwm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Module Button Close Polybar Dwm</title>
+      <link>https://nesstero.github.io/catatan/module-polybar-button-close-dwm/</link>
+      <pubDate>Sun, 14 Nov 2021 17:08:38 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/module-polybar-button-close-dwm/</guid>
+      <description>Requirements   dwm   Polybar   xprop   Create module Pertama kita buat terlebih dahulu script untuk mendeteksi apakah ada window yang aktif pada tags yang sedang kita buka, disini kita akan menggunakan python dan xprop, kurang lebih seperti ini scriptnya :</description>
+    </item>
+    
     <item>
       <title>Colored Characters and Emoji in Dwm</title>
       <link>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</link>
