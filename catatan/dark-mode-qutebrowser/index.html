@@ -117,9 +117,15 @@ if (!doNotTrack) {
 </span><span class="c1">// ==/UserScript==
 </span><span class="c1"></span>
 <span class="nx">DarkReader</span><span class="p">.</span><span class="nx">enable</span><span class="p">({</span>
-	<span class="nx">brightness</span><span class="o">:</span> <span class="mi">80</span><span class="p">,</span>
+	<span class="nx">brightness</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
 	<span class="nx">contrast</span><span class="o">:</span> <span class="mi">90</span><span class="p">,</span>
 	<span class="nx">sepia</span><span class="o">:</span> <span class="mi">10</span>
+<span class="p">});</span>
+
+<span class="nx">DarkReader</span><span class="p">.</span><span class="nx">auto</span><span class="p">({</span>
+    <span class="nx">brightness</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="nx">contrast</span><span class="o">:</span> <span class="mi">90</span><span class="p">,</span>
+    <span class="nx">sepia</span><span class="o">:</span> <span class="mi">10</span>
 <span class="p">});</span>
 
 </code></pre></div><p>Untuk value <strong><code>brightness</code></strong>, <strong><code>contrast</code></strong>, dan <strong><code>sepia</code></strong> bisa di sesuaikan dengan kenyamanan masing - masing. Terakhir reload script monkeynya dengan cara <strong><code>:greasemonkey-reload</code></strong></p>
