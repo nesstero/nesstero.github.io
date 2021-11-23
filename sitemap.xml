@@ -2,109 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
   <url>
-    <loc>https://nesstero.github.io/catatan/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/categories/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/categories/customize/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/dark-mode/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/catatan/dark-mode-qutebrowser/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/qutebrowser/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/</loc>
-    <lastmod>2021-11-17T14:02:42+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/catatan/module-polybar-button-close-dwm/</loc>
-    <lastmod>2021-11-14T17:08:38+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/dwm/</loc>
-    <lastmod>2021-11-14T17:08:38+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/polybar/</loc>
-    <lastmod>2021-11-14T17:08:38+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/python_basic/introduction/</loc>
-    <lastmod>2021-11-08T18:25:56+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/python_basic/</loc>
-    <lastmod>2021-11-08T18:25:56+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/colored-characters/</loc>
-    <lastmod>2021-11-06T20:42:48+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</loc>
-    <lastmod>2021-11-06T20:42:48+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/emoji/</loc>
-    <lastmod>2021-11-06T20:42:48+07:00</lastmod>
-		
-	</url>
-	
-  <url>
     <loc>https://nesstero.github.io/gallery/</loc>
     <lastmod>2021-09-26T21:07:36+07:00</lastmod>
 		
 	</url>
 	
   <url>
+    <loc>https://nesstero.github.io/</loc>
+    <lastmod>2021-09-26T21:07:36+07:00</lastmod>
+		
+	</url>
+	
+  <url>
     <loc>https://nesstero.github.io/tags/ads/</loc>
+    <lastmod>2021-08-04T11:16:35+07:00</lastmod>
+		
+	</url>
+	
+  <url>
+    <loc>https://nesstero.github.io/catatan/</loc>
+    <lastmod>2021-08-04T11:16:35+07:00</lastmod>
+		
+	</url>
+	
+  <url>
+    <loc>https://nesstero.github.io/categories/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
 	</url>
@@ -117,6 +39,12 @@
 	
   <url>
     <loc>https://nesstero.github.io/catatan/hide-ads-disqus/</loc>
+    <lastmod>2021-08-04T11:16:35+07:00</lastmod>
+		
+	</url>
+	
+  <url>
+    <loc>https://nesstero.github.io/tags/</loc>
     <lastmod>2021-08-04T11:16:35+07:00</lastmod>
 		
 	</url>

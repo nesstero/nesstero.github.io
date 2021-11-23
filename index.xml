@@ -6,43 +6,7 @@
     <description>Recent content on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Nov 2021 14:02:42 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Dark Mode Using Monkey Script Qutebrowser</title>
-      <link>https://nesstero.github.io/catatan/dark-mode-qutebrowser/</link>
-      <pubDate>Wed, 17 Nov 2021 14:02:42 +0700</pubDate>
-      
-      <guid>https://nesstero.github.io/catatan/dark-mode-qutebrowser/</guid>
-      <description>Dark mode pada Qutebrowser Untuk menggunakan dark mode pada qutebrowser ada beberapa cara diantaranya:</description>
-    </item>
-    
-    <item>
-      <title>Create Module Button Close Polybar Dwm</title>
-      <link>https://nesstero.github.io/catatan/module-polybar-button-close-dwm/</link>
-      <pubDate>Sun, 14 Nov 2021 17:08:38 +0700</pubDate>
-      
-      <guid>https://nesstero.github.io/catatan/module-polybar-button-close-dwm/</guid>
-      <description>Requirements   dwm   Polybar   xprop   Create module Pertama kita buat terlebih dahulu script untuk mendeteksi apakah ada window yang aktif pada tags yang sedang kita buka, disini kita akan menggunakan python dan xprop, kurang lebih seperti ini scriptnya :</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://nesstero.github.io/python_basic/introduction/</link>
-      <pubDate>Mon, 08 Nov 2021 18:25:56 +0700</pubDate>
-      
-      <guid>https://nesstero.github.io/python_basic/introduction/</guid>
-      <description>Apa itu Python ? Python adalah salah satu bahasa pemrograman tingkat tinggi yang cukup populer, python di buat oleh Guido van Rossum dan pertama kali di rilis pada tahun 1991.</description>
-    </item>
-    
-    <item>
-      <title>Colored Characters and Emoji in Dwm</title>
-      <link>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</link>
-      <pubDate>Sat, 06 Nov 2021 20:42:48 +0700</pubDate>
-      
-      <guid>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</guid>
-      <description>Problem Tidak bisa menggunakan colored characters dan emoji pada bar atau panel dwm.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 26 Sep 2021 21:07:36 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hide Ads Disqus</title>
       <link>https://nesstero.github.io/catatan/hide-ads-disqus/</link>
