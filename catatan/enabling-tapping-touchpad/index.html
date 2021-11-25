@@ -93,6 +93,12 @@ if (!doNotTrack) {
     <p><h3 id="problem"><strong>Problem</strong></h3>
 <p>Tidak bisa <strong>tapping</strong> pada touchpad ?.., mungkin ada yang pernah mengalami permasalahaan ini saat menggunakan xorg pada sistem operasi gnu/linux, permasalahaan ini sebetulnya cukup mudah untuk diatasi dengan cara mengenablekan <strong>libinput Tapping</strong> pada xinput.</p>
 <h3 id="solusi"><strong>Solusi</strong></h3>
+<p>Dalam kasus ini akan dibahas 2 cara untuk mengaktifkan mode tapping pada touchpad :</p>
+<ul>
+<li>Menggunakan xinput</li>
+<li>Menggunakan config touchpad pada <strong><code>/etc/X11/xorg.conf.d/</code></strong></li>
+</ul>
+<h3 id="menggunakan-xinput"><strong>Menggunakan xinput</strong></h3>
 <p>Ketikan perintah</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ xinput
 </code></pre></div><p>pada terminal maka akan muncul list device inputan seperti berikut :</p>
@@ -153,6 +159,19 @@ if (!doNotTrack) {
 </code></pre></div><ul>
 <li>Perintah diatas digunakan untuk mengenablekan <strong>libinput Tapping</strong> id <strong>307</strong> pada touchpad id <strong>11</strong> dengan menginputkan nilai <strong>1</strong>.</li>
 <li>Untuk membuatnya selalu aktif bisa tambahkan perintah <strong><code>xinput set-prop 11 307 1</code></strong> pada file <strong>.profile</strong> atau pada file <strong>.xinitrc</strong></li>
+</ul>
+<h3 id="menggunakan-config-xorg"><strong>Menggunakan config xorg</strong></h3>
+<p>Buat file configurasi touchpad dengan nama <strong><code>30-touchpad.conf</code></strong> pada file <code>/etc/X11/xorg.conf.d/</code>, kurang lebih isi configurasinya seperti ini :</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">Section &quot;InputClass&quot;
+    Identifier &quot;touchpad&quot;
+    Driver &quot;libinput&quot;
+    MatchIsTouchpad &quot;on&quot;
+    Option &quot;Tapping&quot; &quot;on&quot;
+    Option &quot;TappingButtonMap&quot; &quot;lrm&quot;
+EndSection
+
+</code></pre><ul>
+<li><code>lrm&quot;</code>, l == left, r == right, m == middle, disini urutan sangat berpengaruh urutan pertama untuk satu jari, kedua untuk dua jari dan ketiga untuk tiga jari.</li>
 </ul>
 <h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
 <p>Mode tapping pada touchpad sangat membantu bagai pengguna yang tidak menggunakan mouse.</p>
