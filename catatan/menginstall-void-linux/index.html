@@ -109,9 +109,9 @@ if (!doNotTrack) {
 <p>Jangan kaget saat ketika di suduhkan <strong>cli</strong> untuk pertama kali 😀, tenang disini proses installasi ada dua pilihan yaitu dengan mode <strong>TUI</strong> menggunakan <strong>void-installer</strong> dan mode <strong>CLI</strong> menggunakan chroot, tidak seperti arch linux atau artix linux yang hanya ada <strong>CLI</strong> saja.</p>
 <ul>
 <li>Username : root</li>
-<li>Password : voidlinux
-gunakan username dan password diatas untuk proses installasi. Jika menggunakan <strong>WiFi</strong> sebagai sumber konektifitas ke internet, perlu di atur terlebih dahulu wifinya dengan menggunakan <strong>wpa_supplicant</strong>.</li>
+<li>Password : voidlinux</li>
 </ul>
+<p>gunakan username dan password diatas untuk proses installasi. Jika menggunakan <strong>WiFi</strong> sebagai sumber konektifitas ke internet, perlu di atur terlebih dahulu wifinya dengan menggunakan <strong>wpa_supplicant</strong>.</p>
 <h3 id="service-wpa_supplicant"><strong>Service wpa_supplicant</strong></h3>
 <p>Cek terlebih dahulu service wpa_supplicant dan dhcpcd apakah sudah berjalan dengan cara <strong><code>sv status wpa_supplicant</code></strong>, jika belum bisa di aktifkan terlebih dahulu dengan cara :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">ln -s /etc/sv/wpa_supplicant /var/service
@@ -135,7 +135,7 @@ OK
 &gt; set_network <span class="m">0</span> psk <span class="s2">&#34;&lt;password_dari_ssid&gt;&#34;</span>
 OK
 </code></pre></div><ul>
-<li>jika tidak wifi bersifat open atau tidak memerlukan password gunakan <strong><code>set_network 0 key_mgmt NONE</code></strong></li>
+<li>jika wifi bersifat open atau tidak memerlukan password gunakan <strong><code>set_network 0 key_mgmt NONE</code></strong></li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">&gt; select_network <span class="m">0</span>
 OK
@@ -158,13 +158,13 @@ OK
 <li>sda1 untuk swap</li>
 <li>sda2 untuk root <strong><code>/</code></strong></li>
 <li>sda3 untuk home <strong><code>/home</code></strong></li>
-<li>jika menggunakan uefi buat satu partisi lagi untuk boot dengan type <strong><code>ef EFI (FAT-12/16/32)</code></strong> dan pilih boot/bootable ke partisi boot yang sudah dibuat.
-langsung saja masuk ke mode tui installer :</li>
+<li>jika menggunakan uefi buat satu partisi lagi untuk boot dengan type <strong><code>ef EFI (FAT-12/16/32)</code></strong> dan pilih boot/bootable ke partisi boot yang sudah dibuat.</li>
 </ul>
+<p>langsung saja masuk ke mode tui installer :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">void-installer
 </code></pre></div><ul>
 <li><strong>Keyboard</strong> =&gt; us</li>
-<li><strong>Network</strong> =&gt; <wlan> =&gt; &lt;wifi_network&gt;</li>
+<li><strong>Network</strong> =&gt; &lt;wlan_adapter&gt; =&gt; &lt;wifi_network&gt;</li>
 <li><strong>Source</strong> =&gt; Network</li>
 <li><strong>Hostname</strong> =&gt; untuk hostname bebas contoh <strong>myvoid</strong></li>
 <li><strong>Timezone</strong> =&gt; asia =&gt; jakarta</li>
@@ -189,11 +189,13 @@ langsung saja masuk ke mode tui installer :</li>
 </ul>
 <h3 id="mengaktifkan-wpa_supplicant-dan-dhcpcd"><strong>Mengaktifkan wpa_supplicant dan dhcpcd</strong></h3>
 <p>Setelah proses installasi selesai silahkan login dengan username dan password yang sudah dibuat saat proses installasi. wpa_supplicant dan dhcpcd perlu diaktifkan servicenya kembali dengan cara yang sama saat proses installasi diawal tadi.</p>
+<h3 id="set-ulang-hostname"><strong>Set ulang hostname</strong></h3>
+<p>Untuk set ulang hostname bisa di rubah file <strong><code>/etc/hostname</code></strong></p>
 <h3 id="menginstall-xorg"><strong>Menginstall xorg</strong></h3>
 <p>Menginstall package <strong><code>xorg</code></strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install -S xorg-minimal xorg-fonts xprop xsetroot
 </code></pre></div><h3 id="optionals"><strong>Optionals</strong></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install dwm st
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install -S dwm st
 </code></pre></div><ul>
 <li>Window manager dan terminal emulator</li>
 </ul>
@@ -203,10 +205,10 @@ langsung saja masuk ke mode tui installer :</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install -S pipewire pamixer
 </code></pre></div><ul>
-<li>aktifkan service pipewire <strong><code>sudo ln -s /etc/sv/{pipewire,pipewire-pulse} /var/service/</code></strong></li>
-<li>masukan user ke dalam group pipewire <code>user group pipewire : sudo usermod -aG _pipewire $USER</code></li>
+<li>aktifkan service <strong><code>sudo ln -s /etc/sv/{pipewire,pipewire-pulse} /var/service/</code></strong></li>
+<li>masukan user ke dalam group pipewire <strong><code>user group pipewire : sudo usermod -aG _pipewire $USER</code></strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install xdg-user-dirs
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install -S xdg-user-dirs
 $ xdg-user-dirs
 </code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo xbps-install -S pcmanfm lxmenu-data menu-cache
 </code></pre></div><h3 id="membuat-xinitrc"><strong>Membuat xinitrc</strong></h3>
