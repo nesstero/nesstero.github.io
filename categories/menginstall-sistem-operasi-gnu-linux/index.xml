@@ -6,7 +6,16 @@
     <description>Recent content in Menginstall Sistem Operasi Gnu Linux on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2021 17:48:28 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/categories/menginstall-sistem-operasi-gnu-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 14:28:54 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/categories/menginstall-sistem-operasi-gnu-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menginstall Void Linux Base Musl</title>
+      <link>https://nesstero.github.io/catatan/menginstall-void-linux/</link>
+      <pubDate>Fri, 26 Nov 2021 14:28:54 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/menginstall-void-linux/</guid>
+      <description>Sekilas tentang void linux  Void linux  adalah salah satu sistem operasi yang berbasis  monolithic  linux kernel, salah satu hal yang menjadikan void linux berbeda dari distro lainnya adalah void linux support 2 c library yaitu  musl  dan  glibc , bagi user yang menginginkan performa bisa menggunakan versi musl dari void linux.</description>
+    </item>
+    
     <item>
       <title>Menginstall Artix Linux dengan Init Runit</title>
       <link>https://nesstero.github.io/catatan/menginstall-artix-linux/</link>

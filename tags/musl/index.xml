@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musl on Nestero</title>
+    <link>https://nesstero.github.io/tags/musl/</link>
+    <description>Recent content in Musl on Nestero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Nov 2021 14:28:54 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/musl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menginstall Void Linux Base Musl</title>
+      <link>https://nesstero.github.io/catatan/menginstall-void-linux/</link>
+      <pubDate>Fri, 26 Nov 2021 14:28:54 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/menginstall-void-linux/</guid>
+      <description>Sekilas tentang void linux  Void linux  adalah salah satu sistem operasi yang berbasis  monolithic  linux kernel, salah satu hal yang menjadikan void linux berbeda dari distro lainnya adalah void linux support 2 c library yaitu  musl  dan  glibc , bagi user yang menginginkan performa bisa menggunakan versi musl dari void linux.</description>
+    </item>
+    
+  </channel>
+</rss>
