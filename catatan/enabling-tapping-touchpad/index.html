@@ -162,15 +162,15 @@ if (!doNotTrack) {
 </ul>
 <h3 id="menggunakan-config-xorg"><strong>Menggunakan config xorg</strong></h3>
 <p>Buat file configurasi touchpad dengan nama <strong><code>30-touchpad.conf</code></strong> pada file <code>/etc/X11/xorg.conf.d/</code>, kurang lebih isi configurasinya seperti ini :</p>
-<pre tabindex="0"><code class="language-conf" data-lang="conf">Section &quot;InputClass&quot;
-    Identifier &quot;touchpad&quot;
-    Driver &quot;libinput&quot;
-    MatchIsTouchpad &quot;on&quot;
-    Option &quot;Tapping&quot; &quot;on&quot;
-    Option &quot;TappingButtonMap&quot; &quot;lrm&quot;
-EndSection
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">Section &#34;InputClass&#34;</span>
+    <span class="na">Identifier &#34;touchpad&#34;</span>
+    <span class="na">Driver &#34;libinput&#34;</span>
+    <span class="na">MatchIsTouchpad &#34;on&#34;</span>
+    <span class="na">Option &#34;Tapping&#34; &#34;on&#34;</span>
+    <span class="na">Option &#34;TappingButtonMap&#34; &#34;lrm&#34;</span>
+<span class="na">EndSection</span>
 
-</code></pre><ul>
+</code></pre></div><ul>
 <li><code>lrm&quot;</code>, l == left, r == right, m == middle, disini urutan sangat berpengaruh urutan pertama untuk satu jari, kedua untuk dua jari dan ketiga untuk tiga jari.</li>
 </ul>
 <h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
