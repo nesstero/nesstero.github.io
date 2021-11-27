@@ -31,7 +31,7 @@
       <pubDate>Sat, 06 Nov 2021 21:43:23 +0700</pubDate>
       
       <guid>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</guid>
-      <description>Dwm, dmenu atau st crash ketika render karakter berwarna ? Untuk pengguna  dwm  yang mengalami crash ketika membuat status menggunakan karakter yang berwarna, atau ketika menulis catatan di  st  dengan menggunkan color emoji, tenang ada beberapa solusi untuk mengatasinya antara lain :</description>
+      <description>Dwm, dmenu atau st crash ketika render karakter berwarna ? Untuk pengguna  dwm  yang mengalami crash ketika membuat status menggunakan karakter yang berwarna, atau ketika menulis catatan menggunakan vim/nvim dengan  st  dan menggunkan color emoji.</description>
     </item>
     
     <item>
