@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Colored Characters and Emoji in Dwm</title>
+      <link>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</link>
+      <pubDate>Sat, 06 Nov 2021 21:43:23 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/colored-characters-and-emoji-in-dwm/</guid>
+      <description>Dwm, dmenu atau st crash ketika render karakter berwarna ? Untuk pengguna  dwm  yang mengalami crash ketika membuat status menggunakan karakter yang berwarna, atau ketika menulis catatan di  st  dengan menggunkan color emoji, tenang ada beberapa solusi untuk mengatasinya antara lain :</description>
+    </item>
+    
+    <item>
       <title>Hide Ads Disqus</title>
       <link>https://nesstero.github.io/catatan/hide-ads-disqus/</link>
       <pubDate>Wed, 04 Aug 2021 11:16:35 +0700</pubDate>
