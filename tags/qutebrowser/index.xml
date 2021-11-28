@@ -6,7 +6,16 @@
     <description>Recent content in Qutebrowser on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Nov 2021 13:25:58 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/qutebrowser/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Nov 2021 21:07:20 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/qutebrowser/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Userscripts Qute Pass</title>
+      <link>https://nesstero.github.io/catatan/userscripts-qute-pass/</link>
+      <pubDate>Sun, 28 Nov 2021 21:07:20 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/userscripts-qute-pass/</guid>
+      <description>Qute-pass ? Qute-pass adalah salah satu dari sekian banyak userscripts  qutebrowser  yang sangat membantu.</description>
+    </item>
+    
     <item>
       <title>Dark Mode Qutebrowser</title>
       <link>https://nesstero.github.io/catatan/dark-mode-qutebrowser/</link>
