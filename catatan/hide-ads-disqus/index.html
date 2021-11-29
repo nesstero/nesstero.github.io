@@ -99,7 +99,7 @@ if (!doNotTrack) {
 <li>Solusi kedua menggunakan script jQuery</li>
 <li><del>Solusi ketiga menggunakan css</del></li>
 </ul>
-<p>Tentunya kita tidak akan membahas solusi pertama, yang akan kita bahas hanya solusi kedua dan ketiga</p>
+<p>Tentunya kita tidak akan membahas solusi pertama, yang akan kita bahas hanya solusi kedua <del>dan ketiga</del></p>
 <h3 id="menggunakan-script-jquery"><strong>Menggunakan script jQuery</strong></h3>
 <p>Untuk hide ads dari disqus kita perlu menambahkan script jQuery ke dalam website kita, seperti berikut:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">disqus</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">(</span><span class="s1">&#39;#disqus_thread&#39;</span><span class="p">);</span>
@@ -113,11 +113,15 @@ if (!doNotTrack) {
   <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div><h3 id="menggunakan-css"><del><strong>Menggunakan css</strong></del></h3>
-<p><del>Cukup menambahkan satu baris css untuk hide ads dari disqus</del></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">iframe</span><span class="o">[</span><span class="nt">src</span><span class="o">*=</span><span class="s2">&#34;ads-iframe&#34;</span><span class="o">]</span> <span class="p">{</span> <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div><h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
-<p>Dengan Tips and Tricks di atas maka pengunjung website kita nyaman berkomentar tanpa adanya iklan yang <em><strong>menggangu</strong></em></p>
-</p>
+<p><del>Cukup menambahkan satu baris css untuk hide ads dari disqus</del>
+~~```css
+iframe[src*=&ldquo;ads-iframe&rdquo;] { display: none; }</p>
+<pre tabindex="0"><code class="language-~~" data-lang="~~">
+### **Kesimpulan**
+Dengan Tips and Tricks di atas maka pengunjung website kita nyaman berkomentar tanpa adanya iklan yang ***menggangu***
+
+
+</code></pre></p>
     <div class="d-flex">
     
     <p class="mr-3 text-muted"><i class="fa fa-tags"></i>
