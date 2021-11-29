@@ -102,8 +102,7 @@ if (!doNotTrack) {
 </strong></li>
 <li><strong> <a href="https://www.passwordstore.org/" rel="noopener noreferrer" target="_blank">pass</a>
 </strong></li>
-<li><strong> <a href="https://git.zx2c4.com/password-store/tree/contrib/dmenu" rel="noopener noreferrer" target="_blank">passmenu</a>
-</strong></li>
+<li><strong>[pinentry-gtk]</strong></li>
 <li><strong> <a href="https://pypi.org/project/tldextract/" rel="noopener noreferrer" target="_blank">python3-tldextract</a>
 </strong></li>
 </ul>
@@ -119,7 +118,16 @@ if (!doNotTrack) {
 </code></pre></div><ul>
 <li>Untuk lebih lanjut mengenai gpg bisa di baca di manual pagenya</li>
 </ul>
-<h3 id="konfigurasi-pass"><strong>Konfigurasi pass</strong></h3>
+<h3 id="konfigurasi-gpg-agent-untuk-pinentry-gtk"><strong>Konfigurasi gpg-agent untuk pinentry-gtk</strong></h3>
+<p>Buat file config <strong><code>gpg-agent.conf</code></strong> pada <strong><code>~/.gnupg/</code></strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="na">default-cache-ttl 46000</span>
+<span class="na">pinentry-program /usr/bin/pinentry-gtk-2</span>
+<span class="na">allow-preset-passphrase</span>
+</code></pre></div><ul>
+<li>Reload gpg-agent</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ gpg-connect-agent reloadagent /bye
+</code></pre></div><h3 id="konfigurasi-pass"><strong>Konfigurasi pass</strong></h3>
 <p>Inisialisasikan pass dengan id gpg yang sudah dibuat sebelumnya :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ pass init &lt;alamat_email&gt;
 </code></pre></div><h3 id="menyimpan-password-dengan-pass"><strong>Menyimpan password dengan pass</strong></h3>
