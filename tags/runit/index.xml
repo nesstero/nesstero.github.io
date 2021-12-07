@@ -6,7 +6,16 @@
     <description>Recent content in Runit on Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jun 2021 19:32:50 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/runit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 14:28:54 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/runit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menginstall Void Linux Base Musl</title>
+      <link>https://nesstero.github.io/catatan/menginstall-void-linux/</link>
+      <pubDate>Fri, 26 Nov 2021 14:28:54 +0700</pubDate>
+      
+      <guid>https://nesstero.github.io/catatan/menginstall-void-linux/</guid>
+      <description>Sekilas tentang void linux  Void linux  adalah salah satu sistem operasi yang berbasis  monolithic  linux kernel, salah satu hal yang menjadikan void linux berbeda dari distro lainnya adalah void linux support 2 c library yaitu  musl  dan  glibc , bagi user yang menginginkan performa bisa menggunakan versi musl dari void linux.</description>
+    </item>
+    
     <item>
       <title>Install Qemu Virtual Machine Manager On Artix Runit</title>
       <link>https://nesstero.github.io/catatan/menginstall-virtual-machine-manager-pada-artix-runit/</link>

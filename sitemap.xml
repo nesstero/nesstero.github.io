@@ -68,6 +68,12 @@
 	</url>
 	
   <url>
+    <loc>https://nesstero.github.io/tags/runit/</loc>
+    <lastmod>2021-11-27T22:26:18+07:00</lastmod>
+		
+	</url>
+	
+  <url>
     <loc>https://nesstero.github.io/tags/void-linux/</loc>
     <lastmod>2021-11-27T22:26:18+07:00</lastmod>
 		
@@ -219,12 +225,6 @@
 	
   <url>
     <loc>https://nesstero.github.io/tags/qemu/</loc>
-    <lastmod>2021-11-26T13:51:10+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/tags/runit/</loc>
     <lastmod>2021-11-26T13:51:10+07:00</lastmod>
 		
 	</url>
