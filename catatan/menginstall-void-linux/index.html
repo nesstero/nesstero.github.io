@@ -222,6 +222,26 @@ $ xdg-user-dirs
    <span class="c1"># Log stderror to a file</span>
    /usr/local/bin/dwm 2&gt; ~/.dwm.log
 <span class="k">done</span>
+</code></pre></div><h3 id="menggunakan-xbps-src"><strong>Menggunakan xbps-src</strong></h3>
+<p><strong> <a href="https://github.com/void-linux/void-packages" rel="noopener noreferrer" target="_blank">xbps-src</a>
+</strong> digunakan untuk mengcompile app dari source code pada void linux.</p>
+<h4 id="clone-repo-void-packages-dan-persiapan-xbps-src"><strong>Clone repo void-packages dan persiapan xbps-src</strong></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ git clone --depth<span class="o">=</span><span class="m">1</span> https://github.com/void-linux/void-packages
+$ <span class="nb">cd</span> void-packages
+$ ./xbps-src binary-bootstrap
+$ <span class="nb">echo</span> <span class="nv">XBPS_ALLOW_RESTRICTED</span><span class="o">=</span>yes &gt;&gt; etc/conf
+</code></pre></div><h4 id="compile-dan-install-picom-ibhagwan-dan-unrar-menggunakan-xpbs-src"><strong>Compile dan install picom-ibhagwan, dan unrar menggunakan xpbs-src</strong></h4>
+<p><strong> <a href="https://github.com/ibhagwan/picom-ibhagwan-template" rel="noopener noreferrer" target="_blank">picom-ibhagwan</a>
+</strong> :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ git clone https://github.com/ibhagwan/picom-ibhagwan-template
+$ mv picom-ibhagwan-template &lt;path_void-packages&gt;/srcpkgs/picom-ibhagwan
+$ <span class="nb">cd</span> &lt;path_void-packages&gt;
+$ ./xbps-src pkg picom-ibhagwan
+$ sudo xbps-install --repository<span class="o">=</span>hostdir/binpkgs picom-ibhagwan
+</code></pre></div><p><strong>unrar</strong> :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ <span class="nb">cd</span> &lt;path_void-packages&gt;
+$ ./xbps-src pkg unrar
+$ sudo xbps-install --repository<span class="o">=</span>hostdir/binpkgs/nonfree unrar
 </code></pre></div></p>
     <div class="d-flex">
     
