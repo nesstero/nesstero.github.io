@@ -116,11 +116,16 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/server add libera irc.libera.chat/6697 -ssl
 /set irc.server.libera.addresses <span class="s2">&#34;irc.libera.chat/6697&#34;</span>
 /set irc.server.libera.ssl on
-/set irc.secara.libera.autoconnect on
+/set irc.server.libera.autoconnect on
 /set irc.server.libera.sasl_mechanism PLAIN
 /set irc.server.libera.sasl_username &lt;nickname&gt;
 /set irc.server.libera.sasl_password &lt;password&gt;
 /save
+</code></pre></div><ul>
+<li>Pastikan sudah mendaftarkan nickname, bagi yang belum bisa mendaftarkannya sebagai berikut:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/nick &lt;nickname&gt;
+/msg NickServ REGISTER &lt;password&gt; &lt;email&gt;
 </code></pre></div><h3 id="sasl-ecdsa-nist256p-challenge-freenode"><strong>SASL ECDSA-NIST256P-CHALLENGE freenode</strong></h3>
 <p>Untuk login secara otomatis tanpa harus memasukan password akun freenode kita. Pertama kita membuat <strong>public key</strong> untuk <strong>ECDSA</strong> dengan beberapa perintah berikut:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ openssl ecparam -genkey -name prime256v1 -out ~/.weechat/ecdsa.pem
@@ -142,25 +147,6 @@ Kembali ke weechat untuk konfigurasi saslnya:</li>
 <li>Bagi yang belum mendaftarkan nick silahkan daftarkan  <a href="https://freenode.net/kb/answer/registration" title="Nickname Registration" rel="noopener noreferrer" target="_blank">disini</a>
 </li>
 </ul>
-<h3 id="sasl-certfp-libera-chat"><strong>SASL CertFP libera chat</strong></h3>
-<p>Sama seperti konfigurasi pada freenode kita memerlukan <strong>public key</strong> disini kita akan membuat key rsa dengan beberapa perintah berikut:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ openssl req -x509 -new -newkey rsa:4096 -sha256 -days <span class="m">1096</span> -nodes -out libera.pem -keyout libera.pem
-$ openssl x509 -in libera.pem -noout -enddate
-$ openssl x509 -in libera.pem -noout -fingerprint -sha512 <span class="p">|</span> awk -F<span class="o">=</span> <span class="s1">&#39;{gsub(&#34;:&#34;,&#34;&#34;); print tolower ($2)}&#39;</span>
-$ mkdir ~/.weechat/certs
-$ mv libera.pem ~/.weechat/certs
-</code></pre></div><p>Kembali ke weechat untuk konfigurasi saslnya:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/set irc.server.liberachat.ssl_verify on
-/set irc.server.liberachat.ssl_cert %h/certs/libera.pem
-/set irc.server.liberachat.sasl_mechanism external
-/save
-</code></pre></div><ul>
-<li>Pastikan sudah mendaftarkan nickname, bagi yang belum bisa mendaftarkannya sebagai berikut:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">/nick &lt;nickname&gt;
-/msg NickServ REGISTER &lt;password&gt; &lt;email&gt;
-</code></pre></div><h3 id="kesimpulan"><strong>Kesimpulan</strong></h3>
-<p>Weechat sangant cocok digunakan bagi yang ingin bernostalgia dengan yang namanya <strong>IRC</strong> yang sudah mulai dilupakan 😥</p>
 </p>
     <div class="d-flex">
     
