@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mutt on Nestero</title>
+    <title>Mutt on Catatan Nestero</title>
     <link>https://nesstero.github.io/tags/mutt/</link>
-    <description>Recent content in Mutt on Nestero</description>
+    <description>Recent content in Mutt on Catatan Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Jun 2021 11:38:32 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/tags/mutt/index.xml" rel="self" type="application/rss+xml" />

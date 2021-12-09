@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Nestero</title>
+    <title>Categories on Catatan Nestero</title>
     <link>https://nesstero.github.io/categories/</link>
-    <description>Recent content in Categories on Nestero</description>
+    <description>Recent content in Categories on Catatan Nestero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Nov 2021 21:07:20 +0700</lastBuildDate><atom:link href="https://nesstero.github.io/categories/index.xml" rel="self" type="application/rss+xml" />

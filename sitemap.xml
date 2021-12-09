@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
   <url>
+    <loc>https://nesstero.github.io/</loc>
+    <lastmod>2021-12-09T12:24:53+07:00</lastmod>
+		
+	</url>
+	
+  <url>
     <loc>https://nesstero.github.io/catatan/</loc>
     <lastmod>2021-12-09T12:24:53+07:00</lastmod>
 		
@@ -9,12 +15,6 @@
 	
   <url>
     <loc>https://nesstero.github.io/categories/</loc>
-    <lastmod>2021-12-09T12:24:53+07:00</lastmod>
-		
-	</url>
-	
-  <url>
-    <loc>https://nesstero.github.io/</loc>
     <lastmod>2021-12-09T12:24:53+07:00</lastmod>
 		
 	</url>
